@@ -1,0 +1,110 @@
+.bordered{
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+}
+#img_epigraph{
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto;
+}
+div{
+    display: block;
+}
+
+#epigraph .post_text{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+[class^="post_area"], .diary_info{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 10px -5px;
+    padding: 0;
+    padding-bottom: 0;
+}
+
+#sortOrder{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    opacity: 0.6;
+}
+#sortOrder li{
+    display: inline;
+}
+.infouser_area{
+    text-align: center;
+    width: 130px;
+    padding: 10px 5px;
+    float: left;
+}
+[class^="post_area_"] .post_text{
+    min-height: 40px;
+/*    float: right;    */
+    padding-top: 40px;
+}
+.infouser_area .username{
+    font-weight: bold;
+}
+#avatar_area{
+    width: 120px;
+    height: 120px;
+    margin: 10px 5px;
+}
+.underwords{
+    width: 120px;
+    text-align: left;
+    margin: 5px 0;
+}
+.underwords, .post_url{
+    font-size: 85%;
+}
+.post_data{
+    text-align: right;
+}
+.header h2{
+    display: inline;
+    padding-left: 10px;
+    font-weight: normal;
+    font-size: 100%;
+}
+#posts_area{
+    float: left;
+    width: 1100px;
+}
+#menu_area{
+    float: right;
+    width: 150px;
+/*    display: inline;*/
+/*    height: 600px;*/
+}
+
+.diary_info{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+#photo_diary{
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    margin: 20px 0 5px 10px;
+}
+.links_group ul{
+    list-style: none;
+    padding: 0;
+}
+.clear{
+    clear: both;
+}
