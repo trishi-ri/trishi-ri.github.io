@@ -76,17 +76,18 @@ a:hover{
     font-weight: normal;
     font-size: 100%;
 }
-#posts_area{
-    float: left;
-    width: 1100px;
+.layout{
+    width: 1300px;
+    margin: 0;
+    padding: 0;
 }
-#menu_area{
+.posts_area{
+    margin-right: 190px;
+}
+.menu_area{
     float: right;
     width: 150px;
-/*    display: inline;*/
-/*    height: 600px;*/
 }
-
 .diary_info{
     text-align: center;
     margin: 0;
