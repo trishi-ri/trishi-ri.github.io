@@ -54,7 +54,7 @@ a:hover{
 .infouser_area .username{
     font-weight: bold;
 }
-#avatar_area{
+.avatar_area{
     width: 120px;
     height: 120px;
     margin: 10px 5px;
@@ -108,4 +108,15 @@ a:hover{
 }
 .clear{
     clear: both;
+}
+.epigraph_table{
+    width: 100%;
+}
+.epigraph_table td{
+    width: 50%;
+}
+
+.img_sorting{
+    margin: 0;
+    border: 0;
 }
