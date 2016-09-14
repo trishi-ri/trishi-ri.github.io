@@ -1,27 +1,51 @@
 body{
     background: url("images/background.jpg");    
-}
-div{
-    background-color: #AAA939;
-    border-radius: 5px;
     padding: 5px;
     margin: 5px auto;
     color: white;
     width: 500px;
-    border: 1px solid black;
-}
-a{
-    color: black;
-}
-a:visited{
-    color: #555400;
-}
-.offtop{
-    color: #807E15;
-}
-#welcome{
-    text-align: center;    
 }
 #message_404{
     font-size: 20px;
+}
+.welcome{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #554D00;
+}
+.offtop{
+    color: #AAA039;
+}
+.menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #AAA039;
+}
+.menu a{
+    display: block;
+    margin-bottom: -1px;
+    padding: 5px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+.menu a:visited{
+    color: #554D00;
+}
+.menu a:hover{
+    text-decoration: underline;
+    background-color: #FFF7AA;
+}
+.menu .empty-link:hover{
+    text-decoration: none;
+    background-color: inherit;
+}
+.menu .sub-menu{
+    padding: 0;
+    margin: 0;
+    background-color: #D4CB6A;
 }

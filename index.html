@@ -8,27 +8,33 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="welcome">bienvenido a mi mundo<br>
+        <div class="welcome">bienvenido a mi mundo<br>
         <span class="offtop">добро пожаловать в мой мир</span></div>
-        <div id="menu">
-            <ul>
-                <li>используемые ресурсы
-                    <ul>
+        <div>
+            <ul class="menu">
+                <li><a class="empty-link">используемые ресурсы</a>
+                    <ul class="sub-menu">
                         <li><a href="http://www.diary.ru/">@дневники</a></li>
-                        <li><a href="https://geekbrains.ru/">образовательный площадка для программистов</a></li>
+                        <li><a href="https://geekbrains.ru/">образовательная площадка для программистов</a></li>
                         <li><a href="https://htmlacademy.ru/">интерактивные онлайн-курсы по HTML, CSS и JavaScript</a></li>
                         <li><a href="http://lenagold.ru/">коллекция фонов и клипарта</a></li>
                         <li><a href="http://paletton.com/">The Color Scheme Designer</a></li>
                         <li><a href="http://www.iconsearch.ru/">иконки в формате PNG и ICO</a></li>
                         <li><a href="https://validator.w3.org/">The W3C Markup Validation Service</a></li>
+                        <li><a href="https://jigsaw.w3.org/css-validator/">сервис проверки CSS от W3C</a></li>
                     </ul>
                 </li>
-                <li><a href="themes/index.html">тест тем оформления для @дневника</a></li>
-                <li>тренировка создания веб-страниц по рассылке от HTML-Academy
-                    <ol>
-                        <li><a>adventurer</a> <i>(в процеcсе)</i></li>
+                <li><a class="empty-link">тест тем оформления для @дневника</a>
+                    <ul class="sub-menu">
+                        <li><a href="themes/index.html">"заботиться о себе, заботиться о близких"</a></li>
+                        <li><a class="empty-link">...</a></li>
+                    </ul>
+                </li>
+                <li><a>тренировка создания веб-страниц по рассылке от HTML-Academy</a>
+                    <ol class="sub-menu">
+                        <li><a class="empty-link">adventurer <span class="offtop">(в процеcсе)</span></a></li>
 <!--                        <li><a href="pdf2html/02_indipixel/index.html">indipixel</a></li>-->
-                        <li>...</li>
+                        <li><a class="empty-link">...</a></li>
                     </ol>
                 </li>
             </ul>
