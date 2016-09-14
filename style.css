@@ -42,6 +42,7 @@ body{
 }
 .menu .empty-link:hover{
     text-decoration: none;
+    background-color: inherit;
 }
 .menu .sub-menu{
     padding: 0;
