@@ -8,3 +8,12 @@ body{
 #message_404{
     font-size: 20px;
 }
+.welcome{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #554D00;
+}
+}
