@@ -5,23 +5,6 @@ body{
     color: white;
     width: 500px;
 }
-div{
-    background-color: #AAA939;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-a{
-    color: black;
-}
-a:visited{
-    color: #555400;
-}
-.offtop{
-    color: #807E15;
-}
-.welcome{
-    text-align: center;    
-}
 #message_404{
     font-size: 20px;
 }
