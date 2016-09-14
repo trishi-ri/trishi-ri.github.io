@@ -1,13 +1,13 @@
 body{
     background: url("images/background.jpg");    
-}
-div{
-    background-color: #AAA939;
-    border-radius: 5px;
     padding: 5px;
     margin: 5px auto;
     color: white;
     width: 500px;
+}
+div{
+    background-color: #AAA939;
+    border-radius: 5px;
     border: 1px solid black;
 }
 a{
