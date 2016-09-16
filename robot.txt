@@ -1,0 +1,3 @@
+User-agent: Yandex
+Allow: /
+Sitemap: https://trishi-ri.github.io/sitemaps1.xml
