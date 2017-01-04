@@ -1,0 +1,13 @@
+body {
+    color: black;
+    background: white;
+    
+}
+
+.code{
+	font-family:"Courier New", Courier, monospace;
+	font-size:90%;
+	border-width:1px;
+	width:97%;
+	padding:0 3px;
+}
