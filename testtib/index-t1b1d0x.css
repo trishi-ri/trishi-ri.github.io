@@ -1,0 +1,200 @@
+body{
+    font-family: 'Bookman Old Style';
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+    color: black;
+    margin: 0;
+    padding: 15px;
+}
+::-webkit-scrollbar-button {width:6px;height:4px;}  
+::-webkit-scrollbar-track {-webkit-border-radius:2px;border-radius:2px;background: #e8d693;}  
+::-webkit-scrollbar-thumb {-webkit-border-radius:2px;border-radius:2px;background:#c69f02;}
+::-webkit-scrollbar-thumb:hover {background:#9b7c00;}  
+::-webkit-resizer {width:6px;height:4px;}  
+::-webkit-scrollbar {width:5px;}
+
+h1{
+    font-size: 17px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+/*красный цвет тёмного отеления*/
+.dark-section{
+    color: #B22222;
+}
+
+/*зелёный цвет светлого отделения*/
+.light-section{
+    color: #006400;
+}
+
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+/*хитрая схема для нумерованных списков,
+чтобы создавалась нумерация
+для вложенных второго уровня,
+а так же чтобы не было отступа под номерами*/
+.ol-custom ol, .ol-custom ol ol{ 
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.ol-custom ol>li::before,
+.ol-custom ol ol>li::before{
+    margin-right: 5px;
+}
+
+.ol-custom ol{
+    counter-reset: list1;
+}
+
+.ol-custom ol ol{
+    counter-reset: list2
+}
+
+.ol-custom ol>li::before {
+    counter-increment: list1;
+    content: counter(list1)'.';
+}
+
+.ol-custom ol ol>li::before{
+    counter-increment: list2;
+    content: counter(list1)'.'counter(list2);
+}
+/*конец хитрой схемы для нумерованных списков,
+чтобы создавалась нумерация для вложенных,
+а так же чтобы не было отступа под номерами*/
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+blockquote{
+    font-style: italic;    
+}
+
+/*разделитель по центру блока*/
+.separator, .separator-x3{
+    background: url(img/separator.png) no-repeat center top;
+}
+
+/*чтобы разделитель повторился целиком три раза*/
+.separator-x3{
+    background-repeat: repeat-y;
+    background-size: auto 35%;
+}
+
+/*описание псевдо-таблицы через дивы
+для разбиения контента на две колонки*/
+.columns{
+    display: table;
+    width: 95%;
+}
+
+.columns .column{
+    display: table-cell;
+    text-align: center;
+}
+
+.column.spacer{
+    width: 40px;
+}
+/*конец описания псевдо-таблицы через дивы
+для разбиения контента на две колонки*/
+
+/*цвет ссылок под цвет разделов на свитках*/
+a{
+    color: #832804;
+}
+
+/*чуть темнее, чем цвет основных ссылок*/
+a:visited{
+    color: #522310;
+}
+
+.clear{
+    clear: both;
+}
+
+
+#rules ul{
+    /*переделать оглавление правил и внутренние списки пунктов
+    из ненумерованных списков в абзацы с переносами?*/
+    text-align: left;
+}
+
+/*чтобы выводящееся число для пункта
+было жирным шрифтом*/
+#rules ol>li::before,
+#rules ol ol>li::before{
+    font-weight: bold;
+}
+
+#rules h2{
+    text-decoration: underline;
+    /*надо ли без отступа после?*/
+    margin-bottom: 0;
+}
+
+#journal table{
+    width: 80%;
+    margin: auto;
+}
+
+/*надо ли по центру?*/
+#news{
+    text-align: center;
+}
+/*чтобы картинка с напоминанием
+первокурсников влезала при любом размере*/
+#news #note{
+    width: 100%;
+}
+
+/*для картинок на доске почёта*/
+#honour img{
+    float: left;
+    /*ограничение по высоте нужны?*/
+    max-height: 200px;
+    max-width: 100px;
+}
+
+/*чтобы список годов на доске почёта
+отображался нормально*/
+#honour .column:first-child{
+     width: 150px;
+}
+
+/*надо ли по центру?*/
+#entrance{
+    text-align: center;
+}
+
+#profs table{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    border-spacing: 10px;
+}
+
+/*оставить для учительской
+синий цвет заголовков?*/
+#profs th{
+    color: #191970;
+}
+
+#profs td:first-child{
+    text-align: left;
+    width: 60%;
+}
