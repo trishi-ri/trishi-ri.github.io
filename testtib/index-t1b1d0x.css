@@ -14,6 +14,10 @@ body{
 ::-webkit-resizer {width:6px;height:4px;}  
 ::-webkit-scrollbar {width:5px;}
 
+body .content{
+    overflow-y: auto;
+}
+
 h1{
     font-size: 17px;
 }
