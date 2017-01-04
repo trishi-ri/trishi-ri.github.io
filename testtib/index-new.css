@@ -1,0 +1,92 @@
+body{
+    background-color: black;
+    /*background-image: url(http://savepic.su/7204621.jpg);*/
+    background: url("img/background.jpg") scroll left top repeat;
+    color: white;
+    font-family: 'Bookman Old Style';
+    font-size: 16px;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+}
+div{
+/*    overflow: auto;*/
+}
+#header{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+#apple
+{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+#nav{
+    position: relative;
+    width: 1200px;
+    margin: 25px auto;
+    height: 700px;  
+}
+#left-nav, #right-nav, #central-frame {
+    position: absolute;
+}
+#left-nav{
+    width: 300px;
+    text-align: right;
+}
+#central-frame {
+    left: 300px;
+    right: 300px;
+    top: 30px;
+    background: url("img/background-scroll.png") no-repeat top center;
+    background-size: 100% auto;
+/*    padding: 10px;*/
+    height: 670px;
+}
+#right-nav{
+    width: 300px;
+    right: 0;
+    text-align: left;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0 15px;
+    margin: 0;
+    text-decoration: none;
+}
+.menu a, .menu li{
+    display: block;
+}
+.menu a, {
+    color: wheat;
+}
+.menu img{
+    width: 100%;
+}
+
+#main-frame{
+    position: relative;
+    border: 0;
+    top: 10px;
+    left: 10px;
+    width: 580px;
+    height: 630px;
+    z-index: 1;
+}
+
+#Aguh{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+}
+#main-frame:hover ~ #Aguh, #Aguh:hover{
+    opacity: 0.3;
+    z-index: 0;
+}
