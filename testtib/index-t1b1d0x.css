@@ -6,6 +6,7 @@ body{
     color: black;
     margin: 0;
     padding: 15px;
+    overflow-y: auto;
 }
 ::-webkit-scrollbar-button {width:6px;height:4px;}  
 ::-webkit-scrollbar-track {-webkit-border-radius:2px;border-radius:2px;background: #e8d693;}  
