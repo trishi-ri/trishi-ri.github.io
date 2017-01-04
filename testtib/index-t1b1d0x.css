@@ -6,7 +6,6 @@ body{
     color: black;
     margin: 0;
     padding: 15px;
-    overflow-y: auto;
 }
 ::-webkit-scrollbar-button {width:6px;height:4px;}  
 ::-webkit-scrollbar-track {-webkit-border-radius:2px;border-radius:2px;background: #e8d693;}  
@@ -14,6 +13,10 @@ body{
 ::-webkit-scrollbar-thumb:hover {background:#9b7c00;}  
 ::-webkit-resizer {width:6px;height:4px;}  
 ::-webkit-scrollbar {width:5px;}
+
+body .content{
+    overflow-y: auto;
+}
 
 h1{
     font-size: 17px;
