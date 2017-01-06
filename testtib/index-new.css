@@ -73,7 +73,6 @@ div{
     position: relative;
     height: 0;
     padding-bottom: 108%;
-    -webkit-overflow-scrolling: touch;
     overflow: hidden;
 }
 
