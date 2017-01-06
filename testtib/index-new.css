@@ -81,7 +81,7 @@ div{
     position: absolute; /*relative;*/
     border: 0;
     top: 0;
-    left: 10px;
+    left: 0;
     width: 97%;/*580px;*/
     height: 97%;/*630px;*/
     z-index: 1;
