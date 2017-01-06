@@ -45,7 +45,10 @@ div{
     background: url("img/background-scroll.png") no-repeat top center;
     background-size: 100% auto;
 /*    padding: 10px;*/
-    height: 670px;
+    height: 0; /*670px;*/
+    padding-bottom: 55%;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
 }
 #right-nav{
     width: 300px;
@@ -70,12 +73,12 @@ div{
 }
 
 #main-frame{
-    position: relative;
+    position: absolute; /*relative;*/
     border: 0;
     top: 10px;
     left: 10px;
-    width: 580px;
-    height: 630px;
+    width: 97%;/*580px;*/
+    height: 97%;/*630px;*/
     z-index: 1;
     display: inline-block;
 }
