@@ -46,9 +46,6 @@ div{
     background-size: 100% auto;
 /*    padding: 10px;*/
     height: 670px;
-    padding-bottom: 55%;
-    -webkit-overflow-scrolling: touch;
-    overflow: auto;
 }
 #right-nav{
     width: 300px;
