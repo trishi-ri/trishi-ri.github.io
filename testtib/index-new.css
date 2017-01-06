@@ -46,6 +46,7 @@ div{
     background-size: 100% auto;
 /*    padding: 10px;*/
     height: 0; /*670px;*/
+    padding-bottom: 55%;
 }
 #right-nav{
     width: 300px;
