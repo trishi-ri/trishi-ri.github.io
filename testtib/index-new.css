@@ -94,7 +94,7 @@ div{
     z-index: 2;
 
 }
-#main-frame:hover ~ #Aguh, #Aguh:hover{
+.iframe-container:hover ~ #Aguh, #Aguh:hover{
     opacity: 0.3;
     z-index: 0;
 }
