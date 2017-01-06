@@ -16,7 +16,6 @@ body{
 ::-webkit-scrollbar {width:5px;}
 
 body .content{
-    overflow-y: hidden;
 }
 
 h1{
