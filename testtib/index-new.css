@@ -72,6 +72,9 @@ div{
     width: 100%;
 }
 
+.iframe-container{
+}
+
 #main-frame{
     position: absolute; /*relative;*/
     border: 0;
