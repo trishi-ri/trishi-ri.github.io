@@ -71,7 +71,7 @@ div{
 }
 
 #main-frame{
-    position: relative;
+    position: absolute; /*relative;*/
     border: 0;
     top: 10px;
     left: 10px;
