@@ -80,7 +80,7 @@ div{
 #main-frame{
     position: absolute; /*relative;*/
     border: 0;
-    top: 10px;
+    top: 0;
     left: 10px;
     width: 97%;/*580px;*/
     height: 97%;/*630px;*/
