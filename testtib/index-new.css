@@ -75,7 +75,7 @@ div{
     border: 0;
     top: 10px;
     left: 10px;
-    width: 580px;
+    width: 97%;/*580px;*/
     height: 630px;
     z-index: 1;
     display: inline-block;
