@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="favicon_1.ico" rel="shortcut icon" type="image/x-icon">
     <link id="styleTib" href="simple-style.css" rel="stylesheet" type="text/css">
+    <script>
+        function changeCss() {
+            document.getElementById("styleTib").href="normal-style.css";
+            document.getElementById("switcher").value="Версия для зудильника";
+            document.getElementById("switcher").onclick = changeCssToSimple;
+        };
+        function changeCssToSimple() {
+            document.getElementById("styleTib").href="simple-style.css";
+            document.getElementById("switcher").value="Версия для волшебного ока";
+            document.getElementById("switcher").onclick = changeCss;
+        }
+    </script>
 </head>
 <body>
     <input type="button" id="switcher" onclick="changeCss()" value="Версия для волшебного ока"/>
