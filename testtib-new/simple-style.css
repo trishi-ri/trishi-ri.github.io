@@ -7,6 +7,10 @@ body{
     clear: both;
 }
 
+#header, .wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
 #header h1, #header p{
     display: block;
     height: auto;
@@ -76,10 +80,6 @@ a:hover{
 }
 
 
-.wrapper{
-    max-width: 1000px;
-    margin: 0 auto;    
-}
 #content{
     float: right;
     width: -webkit-calc(100% - 142px - 15px);
