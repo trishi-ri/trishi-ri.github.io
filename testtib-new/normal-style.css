@@ -1,0 +1,121 @@
+body{
+    font: 1em/1.2 'Bookman Old Style', Georgia, 'Times New Roman', Times, serif;
+    background: black url(//savepic.su/7204621.jpg) scroll left top repeat;
+    color: white;
+}
+.clear{
+    clear: both;
+}
+
+#header h1, #header p{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+a{
+    display: block;
+    width: 130px;
+    margin-bottom: -1px;
+    padding: 10px;
+    text-decoration: none;
+    color: #800000;
+    background-color: #DDCE89;
+    border: 1px solid #800000;
+    text-align: center;
+}
+
+a:hover{
+    background: #CCBD77;
+}
+
+#switcher{
+    color: #800000;
+    background: url(favicon_1.ico) no-repeat;
+    background-color: #DDCE89;
+    text-align: right;
+    width: 175px;
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+}
+
+.menu > li{
+    position: relative;
+}
+
+/* Подменю */
+.menu .sub-menu{
+    list-style: none;
+    position: absolute;
+    display: none;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    top: 5px;
+    left: 150px;
+    z-index: 1;
+}
+
+/* Cелектор для подменю, если навести мышь */
+/* на родительский элемент верхнего меню */
+.menu > li:hover .sub-menu{
+    display: block;
+}
+
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;    
+}
+#content{
+    float: right;
+    width: -webkit-calc(100% - 160px);
+    width: -o-calc(100% - 160px);
+    width: calc(100% - 160px);
+    text-align: center;
+    background: #DDCE89;
+    border: 1px solid #800000;
+    color: #800000;
+}
+#nav{
+    width: 152px;
+}
+
+.breadcrumbs{
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+    background-color: #DDCE89;
+    color: #800000;
+}
+.breadcrumbs li{
+    display: inline-block;
+}
+.breadcrumbs li span{
+    background-color: #CCBD77;
+    border: 1px solid #800000;
+    padding: 0 5px;
+/*    font-size: 0.9em;*/
+}
+.breadcrumbs li:last-child span{
+    background-color: inherit;
+    border: 0;
+    color: inherit;
+}
+.breadcrumbs li::before {
+    content: '>'; /* Разделитель */
+    margin-left: 5px; /* Отступ слева */
+    margin-right: 5px; /* Отступ справа */
+    color: inherit; /* Цвет разделителя */
+    font-weight: bold;
+}
+.breadcrumbs li:first-child::before {
+    content: ''; /* Убираем разделитель для первого пункта */
+    margin: 0;
+}
