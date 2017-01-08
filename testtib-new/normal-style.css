@@ -7,7 +7,7 @@ body{
     clear: both;
 }
 
-.wrapper{
+#header, .wrapper{
     max-width: 1000px;
     min-width: 500px;
     margin: 0 auto;    
