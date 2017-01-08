@@ -75,6 +75,13 @@ a:hover{
 #nav{
     position: relative;
 }
+#nav .left{
+    position: absolute;
+}
+#nav .right{
+    position: absolute;
+    right: 0;
+}
 
 .breadcrumbs{
     margin: 5px;
