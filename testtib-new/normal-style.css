@@ -11,6 +11,7 @@ body{
     max-width: 1000px;
     min-width: 768px;
     margin: 0 auto;    
+    padding: 5px;
 }
 
 #header h1, #header p{
