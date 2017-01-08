@@ -79,10 +79,12 @@ a:hover{
 }
 #nav .left{
     position: absolute;
+    width: 142px;
 }
 #nav .right{
     position: absolute;
     right: 0;
+    width: 142px;
 }
 
 .breadcrumbs{
