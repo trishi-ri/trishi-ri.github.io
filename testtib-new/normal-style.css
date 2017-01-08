@@ -1,24 +1,29 @@
 body{
     font: 1em/1.2 'Bookman Old Style', Georgia, 'Times New Roman', Times, serif;
-    background: black url(//savepic.su/7204621.jpg) scroll left top repeat;
+    background: black url(images/fon0.jpg) scroll left top repeat;
     color: white;
 }
 .clear{
     clear: both;
 }
 
+#header, .wrapper{
+    max-width: 1000px;
+    min-width: 768px;
+    margin: 0 auto;    
+    padding: 5px;
+}
+
 #header h1, #header p{
     display: block;
-    max-width: 100%;
     height: auto;
     text-align: center;
 }
 
 a{
     display: block;
-    width: 130px;
     margin-bottom: -1px;
-    padding: 10px;
+    padding: 10px 0;
     text-decoration: none;
     color: #800000;
     background-color: #DDCE89;
@@ -32,8 +37,7 @@ a:hover{
 
 #switcher{
     color: #800000;
-    background: url(favicon_1.ico) no-repeat;
-    background-color: #DDCE89;
+    background: #DDCE89 url(favicon_1.ico) no-repeat;
     text-align: right;
     width: 175px;
 }
@@ -44,8 +48,6 @@ a:hover{
     list-style: none;
     font-weight: bold;
 }
-
-
 /* Подменю */
 .menu .sub-menu{
     list-style: none;
@@ -55,23 +57,19 @@ a:hover{
 }
 
 
-
 .wrapper{
     position: relative;
-    max-width: 1000px;
-    min-width: 500px;
-    margin: 0 auto;    
 }
 #content{
-    width: -webkit-calc(100% - 153px * 2 - 12px);
-    width: -o-calc(100% - 153px * 2 - 12px);
-    width: calc(100% - 153px * 2 - 12px);
+    width: -webkit-calc(100% - 152px * 2 - 10px);
+    width: -o-calc(100% - 152px * 2 - 10px);
+    width: calc(100% - 152px * 2 - 10px);
     text-align: center;
     background: #DDCE89;
     border: 1px solid #800000;
     color: #800000;
     position: absolute;
-    left: 153px;
+    left: calc(142px + 9px);
     padding: 5px;
 }
 #nav{
@@ -79,10 +77,12 @@ a:hover{
 }
 #nav .left{
     position: absolute;
+    width: 142px;
 }
 #nav .right{
     position: absolute;
     right: 0;
+    width: 142px;
 }
 
 .breadcrumbs{
