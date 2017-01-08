@@ -9,7 +9,7 @@ body{
 
 #header, .wrapper{
     max-width: 1000px;
-    min-width: 500px;
+    min-width: 768px;
     margin: 0 auto;    
 }
 
