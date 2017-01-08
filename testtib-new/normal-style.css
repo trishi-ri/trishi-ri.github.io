@@ -38,8 +38,7 @@ a:hover{
 
 #switcher{
     color: #800000;
-    background: url(favicon_1.ico) no-repeat;
-    background-color: #DDCE89;
+    background: #DDCE89 url(favicon_1.ico) no-repeat;
     text-align: right;
     width: 175px;
 }
