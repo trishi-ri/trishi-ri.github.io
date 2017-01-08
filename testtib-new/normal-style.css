@@ -57,6 +57,7 @@ a:hover{
 
 
 .wrapper{
+    position: relative;
     max-width: 1000px;
     margin: 0 auto;    
 }
@@ -69,8 +70,11 @@ a:hover{
     background: #DDCE89;
     border: 1px solid #800000;
     color: #800000;
+    position: absolute;
+    left: 153px;
 }
 #nav{
+    position: relative;
 }
 
 .breadcrumbs{
