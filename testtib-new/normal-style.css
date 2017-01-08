@@ -62,7 +62,6 @@ a:hover{
     margin: 0 auto;    
 }
 #content{
-    float: right;
     width: -webkit-calc(100% - 153px * 2 - 12px);
     width: -o-calc(100% - 153px * 2 - 12px);
     width: calc(100% - 153px * 2 - 12px);
