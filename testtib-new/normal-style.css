@@ -62,15 +62,15 @@ a:hover{
     position: relative;
 }
 #content{
-    width: -webkit-calc(100% - 153px * 2 - 12px);
-    width: -o-calc(100% - 153px * 2 - 12px);
-    width: calc(100% - 153px * 2 - 12px);
+    width: -webkit-calc(100% - 152px * 2 - 10px);
+    width: -o-calc(100% - 152px * 2 - 10px);
+    width: calc(100% - 152px * 2 - 10px);
     text-align: center;
     background: #DDCE89;
     border: 1px solid #800000;
     color: #800000;
     position: absolute;
-    left: 153px;
+    left: calc(142px + 9px);
     padding: 5px;
 }
 #nav{
