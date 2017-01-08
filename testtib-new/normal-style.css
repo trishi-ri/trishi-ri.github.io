@@ -7,6 +7,13 @@ body{
     clear: both;
 }
 
+.wrapper{
+    position: relative;
+    max-width: 1000px;
+    min-width: 500px;
+    margin: 0 auto;    
+}
+
 #header h1, #header p{
     display: block;
     max-width: 100%;
@@ -55,13 +62,6 @@ a:hover{
 }
 
 
-
-.wrapper{
-    position: relative;
-    max-width: 1000px;
-    min-width: 500px;
-    margin: 0 auto;    
-}
 #content{
     width: -webkit-calc(100% - 153px * 2 - 12px);
     width: -o-calc(100% - 153px * 2 - 12px);
