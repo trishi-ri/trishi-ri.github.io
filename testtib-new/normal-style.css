@@ -45,28 +45,15 @@ a:hover{
     font-weight: bold;
 }
 
-.menu > li{
-    position: relative;
-}
 
 /* Подменю */
 .menu .sub-menu{
     list-style: none;
-    position: absolute;
-    display: none;
     font-weight: normal;
     margin: 0;
     padding: 0;
-    top: 5px;
-    left: 150px;
-    z-index: 1;
 }
 
-/* Cелектор для подменю, если навести мышь */
-/* на родительский элемент верхнего меню */
-.menu > li:hover .sub-menu{
-    display: block;
-}
 
 
 .wrapper{
