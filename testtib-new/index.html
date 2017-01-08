@@ -5,10 +5,22 @@
     <title>Первый Тибидохс Сети</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="favicon_1.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="simple-style.css" rel="stylesheet" type="text/css">
+    <link id="styleTib" href="simple-style.css" rel="stylesheet" type="text/css">
+    <script>
+        function changeCss() {
+            document.getElementById("styleTib").href="normal-style.css";
+            document.getElementById("switcher").value="Версия для зудильника";
+            document.getElementById("switcher").onclick = changeCssToSimple;
+        };
+        function changeCssToSimple() {
+            document.getElementById("styleTib").href="simple-style.css";
+            document.getElementById("switcher").value="Версия для волшебного ока";
+            document.getElementById("switcher").onclick = changeCss;
+        }
+    </script>
 </head>
 <body>
-    <div id="apple"><a href="tibidox-school.ru/izudilnick/">Версия для магического ока</a></div>
+    <input type="button" id="switcher" onclick="changeCss()" value="Версия для волшебного ока"/>
     <div id="header">
         <h1>Первый Тибидохс Сети</h1>
         <p>
