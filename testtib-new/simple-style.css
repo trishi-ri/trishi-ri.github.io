@@ -99,3 +99,10 @@ a:hover{
     width: 142px;
 }
 
+.menu-button{
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+    background-color: #DDCE89;
+    color: #800000;
+}
