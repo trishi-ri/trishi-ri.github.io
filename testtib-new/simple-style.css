@@ -99,35 +99,3 @@ a:hover{
     width: 142px;
 }
 
-.breadcrumbs{
-    margin: 5px;
-    padding: 5px;
-    text-align: left;
-    background-color: #DDCE89;
-    color: #800000;
-}
-.breadcrumbs li{
-    display: inline-block;
-}
-.breadcrumbs li span{
-    background-color: #CCBD77;
-    border: 1px solid #800000;
-    padding: 0 5px;
-/*    font-size: 0.9em;*/
-}
-.breadcrumbs li:last-child span{
-    background-color: inherit;
-    border: 0;
-    color: inherit;
-}
-.breadcrumbs li::before {
-    content: '>'; /* Разделитель */
-    margin-left: 5px; /* Отступ слева */
-    margin-right: 5px; /* Отступ справа */
-    color: inherit; /* Цвет разделителя */
-    font-weight: bold;
-}
-.breadcrumbs li:first-child::before {
-    content: ''; /* Убираем разделитель для первого пункта */
-    margin: 0;
-}
