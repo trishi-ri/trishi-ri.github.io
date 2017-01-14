@@ -8,8 +8,6 @@ body{
 }
 
 #header, .wrapper{
-    max-width: 1000px;
-    min-width: 480px;
     margin: 0 auto;
     padding: 5px;
 }
@@ -65,15 +63,12 @@ a:hover{
 /* Подменю */
 .menu .sub-menu{
     list-style: none;
-    position: absolute;
-    display: none;
     font-weight: normal;
     margin: 0;
     padding: 0;
     top: 5px;
     left: 140px;
     z-index: 1;
-    width: 142px;
 }
 
 /* Cелектор для подменю, если навести мышь */
@@ -85,49 +80,77 @@ a:hover{
 
 #content{
     float: right;
-    width: -webkit-calc(100% - 142px - 15px);
-    width: -o-calc(100% - 142px - 15px);
-    width: calc(100% - 142px - 15px);
     text-align: center;
     background: #DDCE89;
     border: 1px solid #800000;
     color: #800000;
-    padding: 5px;
-    min-width: calc(142px * 2);
+    padding: 10px 5px;
 }
 #nav{
-    width: 142px;
+    display: none;
+    position: absolute;
+    z-index: 1;
 }
 
-.breadcrumbs{
+.menu-button{
     margin: 5px;
     padding: 5px;
     text-align: left;
     background-color: #DDCE89;
     color: #800000;
 }
-.breadcrumbs li{
-    display: inline-block;
+
+.menu-button:hover ~ #nav, #nav:hover{
+    display: block;
+    width: 100%;
+    left: 0;
 }
-.breadcrumbs li span{
-    background-color: #CCBD77;
-    border: 1px solid #800000;
-    padding: 0 5px;
-/*    font-size: 0.9em;*/
+
+.menu-button:hover{
+    background: #CCBD77;
 }
-.breadcrumbs li:last-child span{
-    background-color: inherit;
-    border: 0;
-    color: inherit;
+
+@media screen and (min-width: 600px) {
+    #nav, #nav:hover{
+        display: block;
+        width: 142px;
+        position: static;
+    }
+    .menu .sub-menu{
+        position: absolute;
+        display: none;
+        width: 142px;
+    }
+    .menu-button{
+        display: none;
+    }
+    #content{
+        width: -webkit-calc(100% - 142px - 15px);
+        width: -o-calc(100% - 142px - 15px);
+        width: calc(100% - 142px - 15px);
+        min-width: calc(142px * 2);
+    }
+    #header, .wrapper{
+        max-width: 1000px;
+        min-width: 480px;
+    }
+    .attention{
+        width: 50%;
+    }
 }
-.breadcrumbs li::before {
-    content: '>'; /* Разделитель */
-    margin-left: 5px; /* Отступ слева */
-    margin-right: 5px; /* Отступ справа */
-    color: inherit; /* Цвет разделителя */
-    font-weight: bold;
+
+.attention{
+    margin: 0 auto;
+    background: #E9DD9A;
+    border: 1px solid #6A4D05;
+    padding: 10px;
+    font-style: italic;
 }
-.breadcrumbs li:first-child::before {
-    content: ''; /* Убираем разделитель для первого пункта */
+.attention p{
     margin: 0;
+}
+p.attention-sign{
+    text-align: right;
+    white-space: pre;
+    margin-top: 10px;
 }
