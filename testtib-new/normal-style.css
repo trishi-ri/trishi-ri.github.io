@@ -43,6 +43,7 @@ a:hover{
 }
 
 .menu{
+    display: block;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -73,6 +74,7 @@ a:hover{
     padding: 5px;
 }
 #nav{
+    display: block;
     position: relative;
 }
 #nav .left{

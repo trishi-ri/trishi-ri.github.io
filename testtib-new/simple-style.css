@@ -8,8 +8,6 @@ body{
 }
 
 #header, .wrapper{
-    max-width: 1000px;
-    min-width: 480px;
     margin: 0 auto;
     padding: 5px;
 }
@@ -65,15 +63,12 @@ a:hover{
 /* Подменю */
 .menu .sub-menu{
     list-style: none;
-    position: absolute;
-    display: none;
     font-weight: normal;
     margin: 0;
     padding: 0;
     top: 5px;
     left: 140px;
     z-index: 1;
-    width: 142px;
 }
 
 /* Cелектор для подменю, если навести мышь */
@@ -85,18 +80,16 @@ a:hover{
 
 #content{
     float: right;
-    width: -webkit-calc(100% - 142px - 15px);
-    width: -o-calc(100% - 142px - 15px);
-    width: calc(100% - 142px - 15px);
     text-align: center;
     background: #DDCE89;
     border: 1px solid #800000;
     color: #800000;
     padding: 5px;
-    min-width: calc(142px * 2);
 }
 #nav{
-    width: 142px;
+    display: none;
+    position: absolute;
+    z-index: 1;
 }
 
 .menu-button{
