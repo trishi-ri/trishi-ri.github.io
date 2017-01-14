@@ -134,10 +134,12 @@ a:hover{
         max-width: 1000px;
         min-width: 480px;
     }
+    .attention{
+        width: 50%;
+    }
 }
 
 .attention{
-    width: 50%;
     margin: 0 auto;
     background: #E9DD9A;
     border: 1px solid #6A4D05;
