@@ -99,8 +99,35 @@ a:hover{
     background-color: #DDCE89;
     color: #800000;
 }
+
 .menu-button:hover ~ #nav, #nav:hover{
     display: block;
     width: 100%;
     left: 0;
+}
+
+@media screen and (min-width: 600px) {
+    #nav, #nav:hover{
+        display: block;
+        width: 142px;
+        position: static;
+    }
+    .menu .sub-menu{
+        position: absolute;
+        display: none;
+        width: 142px;
+    }
+    .menu-button{
+        display: none;
+    }
+    #content{
+        width: -webkit-calc(100% - 142px - 15px);
+        width: -o-calc(100% - 142px - 15px);
+        width: calc(100% - 142px - 15px);
+        min-width: calc(142px * 2);
+    }
+    #header, .wrapper{
+        max-width: 1000px;
+        min-width: 480px;
+    }
 }
