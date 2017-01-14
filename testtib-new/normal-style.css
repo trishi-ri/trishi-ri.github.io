@@ -101,6 +101,7 @@ a:hover{
     height: 209px;
     background: url(//tibidox-school.ru/images/attention.png) center no-repeat;
     width: 100%;
+    border: 0;
 }
 .attention p{
     display: none;
