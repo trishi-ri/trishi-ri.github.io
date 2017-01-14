@@ -131,3 +131,20 @@ a:hover{
         min-width: 480px;
     }
 }
+
+.attention{
+    width: 50%;
+    margin: 0 auto;
+    background: #E9DD9A;
+    border: 1px solid #6A4D05;
+    padding: 10px;
+    font-style: italic;
+}
+.attention p{
+    margin: 0;
+}
+p.attention-sign{
+    text-align: right;
+    white-space: pre;
+    margin-top: 10px;
+}

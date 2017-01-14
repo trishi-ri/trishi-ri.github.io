@@ -96,3 +96,12 @@ a:hover{
 .menu-button{
     display: none;
 }
+
+.attention{
+    height: 209px;
+    background: url(//tibidox-school.ru/images/attention.png) center no-repeat;
+    width: 100%;
+}
+.attention p{
+    display: none;
+}
