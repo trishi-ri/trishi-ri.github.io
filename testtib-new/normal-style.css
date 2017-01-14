@@ -15,9 +15,15 @@ body{
 }
 
 #header h1, #header p{
-    display: block;
+    display: none;
     height: auto;
     text-align: center;
+}
+
+#header{
+    background: url(images/shapka.png) no-repeat center;
+    background-size: cover;
+    height: 400px;
 }
 
 a{
