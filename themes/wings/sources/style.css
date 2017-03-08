@@ -29,6 +29,8 @@ a{
 .bordered{
 /*  цвет границы  */
     border-color: #663366;
+}
+.posts_area, .menu_area, .epigraph_area{
 /*  цвет фона записи  */
     background-color: #000000;
 }
@@ -53,4 +55,8 @@ a{
 #photo_diary{
 /*  путь к фото профиля  */
     background-image: url("photo.jpg");
+}
+
+#epigraph iframe{
+    height: 343px;
 }

@@ -11,10 +11,6 @@
 div{
     display: block;
 }
-
-#epigraph .post_text{
-    text-align: center;
-}
 a{
     text-decoration: none;
 }
@@ -24,7 +20,6 @@ a{
 a:hover{
     text-decoration: underline;
 }
-
 [class^="post_area"], .diary_info{
     border-left: none;
     border-right: none;
@@ -80,7 +75,7 @@ a:hover{
     font-size: 100%;
 }
 .layout{
-    width: 1300px;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -111,12 +106,6 @@ a:hover{
 }
 .clear{
     clear: both;
-}
-.epigraph_table{
-    width: 100%;
-}
-.epigraph_table td{
-    width: 50%;
 }
 
 .img_sorting{
