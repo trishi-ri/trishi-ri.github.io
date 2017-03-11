@@ -6,7 +6,7 @@
 #img_epigraph{
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: auto;
+    background-size: contain;
 }
 div{
     display: block;
