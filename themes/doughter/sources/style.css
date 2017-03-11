@@ -57,6 +57,10 @@ a{
     background-image: url("avatar_1.jpg");
 }
 
+
+.epigraph_area table{
+    width: 100%;
+}
 #epigraph iframe{
-    height: 520px;
+    height: 519px;
 }
