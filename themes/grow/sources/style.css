@@ -12,7 +12,7 @@ body{
 }
 .header, h1{
 /*  цвет заголовка  */
-    color: #336633;
+    color: #669999;
 /*  цвет фона заголовка  */
     background-color: transparent;
 /*  размер шрифта заголовка  */
@@ -20,19 +20,19 @@ body{
 }
 .offtop{
 /*  цвет оффтопа  */
-    color: #99CC99;
+    color: #ccc;
 }
 a{
 /*  цвет ссылки  */
-    color: #336633;
+    color: #666;
 }
 .bordered{
 /*  цвет границы  */
-    border-color: #333;
+    border-color: #009999;
 }
 .posts_area, .menu_area, .epigraph_area{
 /*  цвет фона записи  */
-    background-color: #ffffff;
+    background-color: #fff;
 }
 #img_epigraph{
 /*  путь к картинке для эпиграфа  */
@@ -58,5 +58,5 @@ a{
 }
 
 #epigraph iframe{
-    height: 26px;
+    height: 526px;
 }

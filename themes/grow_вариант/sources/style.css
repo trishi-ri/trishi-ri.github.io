@@ -1,18 +1,18 @@
 body{
 /*  цвет записей  */
-    color: #e3cda3;
+    color: #000;
 /*  цвет фона дневника  */
     background-color: transparent;
 /*  фоновое изображение  */
     background-image: url(background.jpg);
 /*  стиль шрифта  */
-    font-family: Verdana;
+    font-family: "Trebuchet MS";
 /*  размер шрифта основных текстов  */
     font-size: 70%;
 }
 .header, h1{
 /*  цвет заголовка  */
-    color: #a9998a;
+    color: #333;
 /*  цвет фона заголовка  */
     background-color: transparent;
 /*  размер шрифта заголовка  */
@@ -20,19 +20,19 @@ body{
 }
 .offtop{
 /*  цвет оффтопа  */
-    color: #663333;
+    color: #999;
 }
 a{
 /*  цвет ссылки  */
-    color: #996633;
+    color: #666;
 }
 .bordered{
 /*  цвет границы  */
-    border-color: #333;
+    border-color: #747549;
 }
 .posts_area, .menu_area, .epigraph_area{
 /*  цвет фона записи  */
-    background-color: #1a1511;
+    background-color: #CCC;
 }
 #img_epigraph{
 /*  путь к картинке для эпиграфа  */
@@ -54,13 +54,9 @@ a{
 }
 #photo_diary{
 /*  путь к фото профиля  */
-    background-image: url("avatar_1.jpg");
+    background-image: url("photo.jpg");
 }
 
-
-.epigraph_area table{
-    width: 100%;
-}
 #epigraph iframe{
-    height: 519px;
+    height: 526px;
 }
