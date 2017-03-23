@@ -3,27 +3,27 @@ body{
     padding: 5px;
     margin: 5px auto;
     color: white;
-    width: 500px;
+    width: 435px;
 }
 #message_404{
     font-size: 20px;
 }
 .welcome{
     padding: 5px;
-    margin: 5px;
+    margin: 70px;
     text-align: center;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: #554D00;
+    background-color: #666666;
 }
 .offtop{
-    color: #AAA039;
+    color: #333333;
 }
 .menu{
     padding: 0;
     margin: 0;
     list-style: none;
-    background-color: #AAA039;
+    background-color: #999999;
 }
 .menu a{
     display: block;
@@ -34,11 +34,11 @@ body{
     color: black;
 }
 .menu a:visited{
-    color: #554D00;
+    color: #999999;
 }
 .menu a:hover{
     text-decoration: underline;
-    background-color: #FFF7AA;
+    background-color: #CCCCCC;
 }
 .menu .empty-link:hover{
     text-decoration: none;
@@ -47,5 +47,5 @@ body{
 .menu .sub-menu{
     padding: 0;
     margin: 0;
-    background-color: #D4CB6A;
+    background-color: #FFFFFF;
 }
