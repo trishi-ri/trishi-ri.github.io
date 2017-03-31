@@ -1,6 +1,6 @@
 webpackJsonp([1,4],{
 
-/***/ 331:
+/***/ 332:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33,7 +33,7 @@ var Article = (function () {
 
 /***/ }),
 
-/***/ 332:
+/***/ 333:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79,13 +79,13 @@ var ArticlesList = (function () {
 
 /***/ }),
 
-/***/ 333:
+/***/ 334:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_search_result_search_result_model__ = __webpack_require__(514);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_search_result_search_result_model__ = __webpack_require__(515);
 /* unused harmony export YOUTUBE_API_KEY */
 /* unused harmony export YOUTUBE_API_URL */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return youTubeServiceInjectable; });
@@ -153,7 +153,7 @@ var YouTubeService = (function () {
 
 /***/ }),
 
-/***/ 401:
+/***/ 402:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -162,20 +162,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 401;
+webpackEmptyContext.id = 402;
 
 
 /***/ }),
 
-/***/ 402:
+/***/ 403:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(319);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(517);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(507);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(518);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(508);
 
 
 
@@ -188,13 +188,13 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 506:
+/***/ 507:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_article_article_model__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_articles_list_articles_list_model__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_article_article_model__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_articles_list_articles_list_model__ = __webpack_require__(333);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -228,7 +228,7 @@ var AppComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-root',
             template: __webpack_require__(680),
-            styles: [__webpack_require__(671)]
+            styles: [__webpack_require__(670)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -238,25 +238,25 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 507:
+/***/ 508:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(305);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_dynamic__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(506);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_article_article_component__ = __webpack_require__(508);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_articles_list_articles_list_component__ = __webpack_require__(509);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_form_create_article_form_create_article_component__ = __webpack_require__(510);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_simple_http_simple_http_component__ = __webpack_require__(515);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_search_box_search_box_component__ = __webpack_require__(512);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_search_result_search_result_component__ = __webpack_require__(513);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_youtube_search_youtube_search_component__ = __webpack_require__(516);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_http_requests_http_requests_component__ = __webpack_require__(511);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_youtube_you_tube_service__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_dynamic__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(507);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_article_article_component__ = __webpack_require__(509);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_articles_list_articles_list_component__ = __webpack_require__(510);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_form_create_article_form_create_article_component__ = __webpack_require__(511);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_simple_http_simple_http_component__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_search_box_search_box_component__ = __webpack_require__(513);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_search_result_search_result_component__ = __webpack_require__(514);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_youtube_search_youtube_search_component__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_http_requests_http_requests_component__ = __webpack_require__(512);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_youtube_you_tube_service__ = __webpack_require__(334);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -317,12 +317,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 508:
+/***/ 509:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__article_model__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__article_model__ = __webpack_require__(332);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArticleComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -371,7 +371,7 @@ var ArticleComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-article',
             template: __webpack_require__(681),
-            styles: [__webpack_require__(672)],
+            styles: [__webpack_require__(671)],
             host: { 'class': 'list-group-item' }
         }), 
         __metadata('design:paramtypes', [])
@@ -383,12 +383,12 @@ var ArticleComponent = (function () {
 
 /***/ }),
 
-/***/ 509:
+/***/ 510:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__articles_list_model__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__articles_list_model__ = __webpack_require__(333);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArticlesListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -446,7 +446,7 @@ var ArticlesListComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-articles-list',
             template: __webpack_require__(682),
-            styles: [__webpack_require__(673)],
+            styles: [__webpack_require__(672)],
             host: { 'class': 'block-of-information' }
         }), 
         __metadata('design:paramtypes', [])
@@ -458,12 +458,12 @@ var ArticlesListComponent = (function () {
 
 /***/ }),
 
-/***/ 510:
+/***/ 511:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(306);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormCreateArticleComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -509,7 +509,7 @@ var FormCreateArticleComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'form-create-article',
             template: __webpack_require__(683),
-            styles: [__webpack_require__(674)],
+            styles: [__webpack_require__(673)],
             host: { 'class': 'block-of-information' }
         }), 
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormBuilder */]) === 'function' && _b) || Object])
@@ -526,12 +526,12 @@ function linkValidator(control) {
 
 /***/ }),
 
-/***/ 511:
+/***/ 512:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(149);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpRequestsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -585,7 +585,7 @@ var HttpRequestsComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-http-requests',
             template: __webpack_require__(684),
-            styles: [__webpack_require__(675)],
+            styles: [__webpack_require__(674)],
             host: { 'class': 'block-of-information' }
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === 'function' && _a) || Object])
@@ -597,14 +597,14 @@ var HttpRequestsComponent = (function () {
 
 /***/ }),
 
-/***/ 512:
+/***/ 513:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs__ = __webpack_require__(690);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_youtube_you_tube_service__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_youtube_you_tube_service__ = __webpack_require__(334);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchBoxComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -650,7 +650,7 @@ var SearchBoxComponent = (function () {
             outputs: ['loading', 'results'],
             selector: 'app-search-box',
             template: __webpack_require__(685),
-            styles: [__webpack_require__(676)]
+            styles: [__webpack_require__(675)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_youtube_you_tube_service__["a" /* YouTubeService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_youtube_you_tube_service__["a" /* YouTubeService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* ElementRef */]) === 'function' && _b) || Object])
     ], SearchBoxComponent);
@@ -661,7 +661,7 @@ var SearchBoxComponent = (function () {
 
 /***/ }),
 
-/***/ 513:
+/***/ 514:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -685,7 +685,7 @@ var SearchResultComponent = (function () {
             inputs: ['result'],
             selector: 'app-search-result',
             template: __webpack_require__(686),
-            styles: [__webpack_require__(677)]
+            styles: [__webpack_require__(676)]
         }), 
         __metadata('design:paramtypes', [])
     ], SearchResultComponent);
@@ -695,7 +695,7 @@ var SearchResultComponent = (function () {
 
 /***/ }),
 
-/***/ 514:
+/***/ 515:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -715,12 +715,12 @@ var SearchResult = (function () {
 
 /***/ }),
 
-/***/ 515:
+/***/ 516:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(149);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SimpleHttpComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -750,7 +750,7 @@ var SimpleHttpComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-simple-http',
             template: __webpack_require__(687),
-            styles: [__webpack_require__(678)],
+            styles: [__webpack_require__(677)],
             host: { 'class': 'block-of-information' }
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === 'function' && _a) || Object])
@@ -762,7 +762,7 @@ var SimpleHttpComponent = (function () {
 
 /***/ }),
 
-/***/ 516:
+/***/ 517:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -790,7 +790,7 @@ var YoutubeSearchComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-youtube-search',
             template: __webpack_require__(688),
-            styles: [__webpack_require__(679)],
+            styles: [__webpack_require__(678)],
             host: { 'class': 'block-of-information' }
         }), 
         __metadata('design:paramtypes', [])
@@ -801,7 +801,7 @@ var YoutubeSearchComponent = (function () {
 
 /***/ }),
 
-/***/ 517:
+/***/ 518:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -817,73 +817,172 @@ var environment = {
 
 /***/ }),
 
-/***/ 671:
-/***/ (function(module, exports) {
+/***/ 670:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ".block-of-information {\r\n  display: block;\r\n  position: relative;\r\n  margin: 5px;\r\n  border: solid 1px black;\r\n}\r\n"
+exports = module.exports = __webpack_require__(39)();
+// imports
+
+
+// module
+exports.push([module.i, ".block-of-information {\r\n  display: block;\r\n  position: relative;\r\n  margin: 5px;\r\n  border: solid 1px black;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 671:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(39)();
+// imports
+
+
+// module
+exports.push([module.i, ".additional-group {\r\n  display: none;\r\n}\r\n\r\n.additional-group.displayed {\r\n  display: block;\r\n}\r\n\r\n.list-group-item-heading {\r\n  padding: 0 5px;\r\n  font-weight: bold;\r\n}\r\n\r\n#buttonDelete {\r\n  float: right;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 672:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ".additional-group {\r\n  display: none;\r\n}\r\n\r\n.additional-group.displayed {\r\n  display: block;\r\n}\r\n\r\n.list-group-item-heading {\r\n  padding: 0 5px;\r\n  font-weight: bold;\r\n}\r\n\r\n#buttonDelete {\r\n  float: right;\r\n}\r\n"
+exports = module.exports = __webpack_require__(39)();
+// imports
+
+
+// module
+exports.push([module.i, ".list-group-item {\r\n  margin: 10px 0;\r\n  border-radius: 4px;\r\n}\r\n\r\n.list-group-item.selected {\r\n  border-color: black;\r\n  border-width: 2px;\r\n}\r\n\r\n.list-group-item:hover {\r\n  background-color: #f5f5f5;\r\n}\r\n\r\n.list-group {\r\n  background-color: gray;\r\n  padding: 5px;\r\n  margin-bottom: 0;\r\n}\r\n\r\n.divider {\r\n  position: absolute;\r\n  width: 5px;\r\n  height: 100%;\r\n  top: 0;\r\n  border-left: 2px solid #e5e5e5;\r\n  margin-left: 25px;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 673:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ".list-group-item {\r\n  margin: 10px 0;\r\n  border-radius: 4px;\r\n}\r\n\r\n.list-group-item.selected {\r\n  border-color: black;\r\n  border-width: 2px;\r\n}\r\n\r\n.list-group-item:hover {\r\n  background-color: #f5f5f5;\r\n}\r\n\r\n.list-group {\r\n  background-color: gray;\r\n  padding: 5px;\r\n  margin-bottom: 0;\r\n}\r\n\r\n.divider {\r\n  position: absolute;\r\n  width: 5px;\r\n  height: 100%;\r\n  top: 0;\r\n  border-left: 2px solid #e5e5e5;\r\n  margin-left: 25px;\r\n}\r\n"
+exports = module.exports = __webpack_require__(39)();
+// imports
+
+
+// module
+exports.push([module.i, "/*Only display content to screen readers*/\r\n/*See: http://a11yproject.com/posts/how-to-hide-content*/\r\n.sr-only {\r\n  position: absolute;\r\n  width: 1px;\r\n  height: 1px;\r\n  margin: -1px;\r\n  padding: 0;\r\n  overflow: hidden;\r\n  clip: rect(0, 0, 0, 0);\r\n  border: 0;\r\n}\r\n\r\n.inputField {\r\n  margin: 5px;\r\n}\r\n\r\n.ng-valid[required], .ng-valid.required {\r\n  border-left: 5px solid #42A948; /* green */\r\n}\r\n\r\n.ng-invalid:not(form) {\r\n  border-left: 5px solid #a94442; /* red */\r\n}\r\n\r\n.form-control {\r\n  position: relative;\r\n  height: auto;\r\n  box-sizing: border-box;\r\n  padding: 10px;\r\n  font-size: 16px;\r\n}\r\n\r\n.form-control:focus {\r\n  z-index: 2;\r\n}\r\n\r\nform {\r\n  margin: 5px;\r\n}\r\n\r\n.list-group.validator-messages {\r\n  margin: 5px;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 674:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/*Only display content to screen readers*/\r\n/*See: http://a11yproject.com/posts/how-to-hide-content*/\r\n.sr-only {\r\n  position: absolute;\r\n  width: 1px;\r\n  height: 1px;\r\n  margin: -1px;\r\n  padding: 0;\r\n  overflow: hidden;\r\n  clip: rect(0, 0, 0, 0);\r\n  border: 0;\r\n}\r\n\r\n.inputField {\r\n  margin: 5px;\r\n}\r\n\r\n.ng-valid[required], .ng-valid.required {\r\n  border-left: 5px solid #42A948; /* green */\r\n}\r\n\r\n.ng-invalid:not(form) {\r\n  border-left: 5px solid #a94442; /* red */\r\n}\r\n\r\n.form-control {\r\n  position: relative;\r\n  height: auto;\r\n  box-sizing: border-box;\r\n  padding: 10px;\r\n  font-size: 16px;\r\n}\r\n\r\n.form-control:focus {\r\n  z-index: 2;\r\n}\r\n\r\nform {\r\n  margin: 5px;\r\n}\r\n\r\n.list-group.validator-messages {\r\n  margin: 5px;\r\n}\r\n"
+exports = module.exports = __webpack_require__(39)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 675:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ""
+exports = module.exports = __webpack_require__(39)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 676:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ""
+exports = module.exports = __webpack_require__(39)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 677:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ""
+exports = module.exports = __webpack_require__(39)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 678:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ""
+exports = module.exports = __webpack_require__(39)();
+// imports
 
-/***/ }),
 
-/***/ 679:
-/***/ (function(module, exports) {
+// module
+exports.push([module.i, "", ""]);
 
-module.exports = ""
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 680:
 /***/ (function(module, exports) {
 
-module.exports = "<h1 class=\"page-header\">Dashboard</h1>\r\n\r\n<div class=\"row\">\r\n  <div class=\"col-sm-4 col-md-2 sidebar\">\r\n    <form-create-article\r\n      (onArticleValid)=\"addArticle($event)\">\r\n    </form-create-article>\r\n  </div>\r\n  <div class=\"col-sm-4 col-md-5 main\">\r\n    <app-articles-list\r\n      [articles]=\"articles\"\r\n      (onArticleSelected)=\"articleWasSelected($event)\">\r\n    </app-articles-list>\r\n  </div>\r\n  <div class=\"col-sm-4 col-md-5\">\r\n    <app-simple-http></app-simple-http>\r\n    <app-http-requests></app-http-requests>\r\n  </div>\r\n</div>\r\n<div class=\"row\">\r\n  <div>\r\n    <app-youtube-search></app-youtube-search>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<h1 class=\"page-header\">Dashboard</h1>\r\n\r\n<div class=\"row\">\r\n\r\n  <!-- Nav tabs -->\r\n  <ul class=\"nav nav-tabs\">\r\n    <li class=\"active\"><a href=\"#home\" aria-controls=\"home\" data-toggle=\"tab\">Articles</a></li>\r\n    <li><a href=\"#httpRequests\" aria-controls=\"httpRequests\" data-toggle=\"tab\">http requests</a></li>\r\n    <li><a href=\"#youtubeSearch\" aria-controls=\"youtubeSearch\" data-toggle=\"tab\">youtube search</a></li>\r\n    <li><a href=\"#chat\" aria-controls=\"chat\" data-toggle=\"tab\">chat</a></li>\r\n  </ul>\r\n\r\n  <!-- Tab panes -->\r\n  <div class=\"tab-content\">\r\n    <div class=\"tab-pane active\" id=\"home\">\r\n      <div class=\"col-sm-4 col-md-2 sidebar\">\r\n        <form-create-article\r\n          (onArticleValid)=\"addArticle($event)\">\r\n        </form-create-article>\r\n      </div>\r\n      <div class=\"col-sm-4 col-md-5 main\">\r\n        <app-articles-list\r\n          [articles]=\"articles\"\r\n          (onArticleSelected)=\"articleWasSelected($event)\">\r\n        </app-articles-list>\r\n      </div>\r\n    </div>\r\n    <div class=\"tab-pane\" id=\"httpRequests\">\r\n      <div class=\"col-sm-4 col-md-5\">\r\n        <app-simple-http></app-simple-http>\r\n      </div>\r\n      <div class=\"col-sm-4 col-md-5\">\r\n        <app-http-requests></app-http-requests>\r\n      </div>\r\n    </div>\r\n    <div class=\"tab-pane\" id=\"youtubeSearch\">\r\n      <app-youtube-search></app-youtube-search>\r\n    </div>\r\n    <div class=\"tab-pane\" id=\"chat\">...</div>\r\n  </div>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -946,17 +1045,17 @@ module.exports = "<div class='container'>\n  <div class=\"page-header\">\n    <h
 /***/ 963:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "loading.gif";
+module.exports = __webpack_require__.p + "loading.b0caf11935ee988a7ee4.gif";
 
 /***/ }),
 
 /***/ 965:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(402);
+module.exports = __webpack_require__(403);
 
 
 /***/ })
 
 },[965]);
-//# sourceMappingURL=main.bundle.map
+//# sourceMappingURL=main.bundle.js.map
