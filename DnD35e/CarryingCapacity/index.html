@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!--        <link rel="icon" href="favicon.ico">-->
+
+        <!-- Bootstrap core CSS -->
+        <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <title>маленький моглась</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Carrying Capacity</h1>
+            <div class="row">
+                <div class="col-sm-4 col-md-4"></div>
+                <div class="col-sm-4 col-md-4 well">
+                
+                    <form>
+                        <div class="form-group">
+                            <label for="strength">Сила (Strength):</label>
+                            <input class="form-control" id="strength" type="number" size="2"  name="strength" min="1" max="99" value="10" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="size">Размер (Size):</label>
+                            <select class="form-control" name="size" form="data">
+                                <option value="0,125">Мелкий (Fine)</option>
+                                <option value="0,25">Миниатюрный (Diminutive)</option>
+                                <option value="0,5">Крошечный (Tiny)</option>
+                                <option value="0,75">Маленький (Small)</option>
+                                <option selected value="1">Средний (Medium)</option>
+                                <option value="2">Большой (Large)</option>
+                                <option value="4">Огромный (Huge)</option>
+                                <option value="8">Громадный (Gargantuan)</option>
+                                <option value="16">Колоссальный (Colossal)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-default btn-block" form="data">Пересчитать</button>
+                    </form>
+                </div>
+                <div class="col-sm-4 col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-4"></div>
+                <div class="col-sm-4 col-md-4 well">
+                
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active"><a href="#rus" aria-controls="rus" data-toggle="tab" aria-expanded="true">rus</a></li>
+                        <li><a href="#eng" aria-controls="eng" data-toggle="tab" aria-expanded="false">eng</a></li>
+                        <li><a href="#mix" aria-controls="mix" data-toggle="tab" aria-expanded="false">mix</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="rus">
+                        <textarea readonly rows="6">Лёгкая нагрузка: 14,9 кг или меньше
+Средняя нагрузка: 15,0 – 29,7 кг
+Тяжёлая нагрузка: 29,8 – 45,0 кг
+Поднять над головой: 45,0 кг
+Поднять над землёй: 90,0 кг
+Толкать или тащить: 225,0 кг</textarea>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="eng">
+                        <textarea readonly rows="6">Light load: 33 lb. or less
+Medium load: 34–66 lb.
+Heavy load: 67–100 lb.
+Lift over head: 100 lb.
+Lift off ground: 200 lb.
+Push or drag: 500 lb.</textarea>    
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="mix">
+                        <textarea readonly rows="6">Лёгкая (Light load): 14,9 кг (33 lb. or less)
+Средняя (Medium load): 15,0 – 29,7 кг (34–66 lb.)
+Тяжёлая (Heavy load): 29,8 – 45,0 кг (67–100 lb.)
+Поднять над головой (Lift over head): 45,0 кг (100 lb.)
+Поднять над землёй (Lift off ground): 90,0 кг (200 lb.)
+Толкать или тащить (Push or drag): 225,0 кг (500 lb.)</textarea>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-4 col-md-4"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-4 col-md-4"></div>
+                <div class="col-sm-4 col-md-4">
+                
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">Переносимый вес</div>
+                        <div class="panel-body">
+                            <div class="input-group">
+                                <input type="text" class="form-control" type="number" size="5" name="weight" min="1" max="99999" value="20" step="0.1" required>
+
+                                <div class="input-group-btn" data-toggle="buttons">
+                                    <label class="btn btn-default">
+                                    <input type="radio" name="unit" id="option1" autocomplete="off"> lb.
+                                    </label>
+                                    <label class="btn btn-default active">
+                                    <input type="radio" name="unit" id="option2" autocomplete="off" checked> кг
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <p>20 кг => Средняя Нагрузка</p>
+                            <p>Макс. Ловкость = +3</p>
+                            <p>Штраф Проверки = -3</p>
+                            <p>Скорость: 9 м (30 ft.) = 6 м (20 ft.)</p>
+                            <p>Скорость: 6 м (30 ft.) = 4,5 м (15 ft.)</p>
+                            <p>Скорость: бег (30 ft.) = х4</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-4 col-md-4"></div>
+            </div>
+            
+        </div>   
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="https://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
