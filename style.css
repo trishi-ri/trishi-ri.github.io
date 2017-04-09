@@ -2,7 +2,6 @@ body{
     background: url("images/background.jpg");    
     padding: 5px;
     margin: 5px auto;
-    color: white;
     width: 435px;
 }
 #message_404{
@@ -14,10 +13,10 @@ body{
     text-align: center;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: #666666;
+    background-color: white;
 }
 .offtop{
-    color: #333333;
+    color: #999999;
 }
 .menu{
     padding: 0;
@@ -48,4 +47,5 @@ body{
     padding: 0;
     margin: 0;
     background-color: #FFFFFF;
+    color: white;
 }
