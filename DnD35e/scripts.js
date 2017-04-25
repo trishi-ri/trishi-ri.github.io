@@ -1,14 +1,9 @@
 'use strict';
-alert('OK. Works');
 var i, mult,
     textLb, textKg, textMix,
     curLb, curKg,
-    lightLb = "3,6,10,13,16,20,23,26,30,33,38,43,50,58,66,76,86,100,116,133,153,173,200,233,266,306,346,400,466",
-    mediumLb = "6,13,20,26,33,40,46,53,60,66,76,86,100,116,133,153,173,200,233,266,306,346,400,466,533,613,693,800,933",
-    heavyLb = "10,20,30,40,50,60,70,80,90,100,115,130,150,200,175,200,230,260,300,350,400,460,520,600,700,800,920,1040,1200,1400",
-    lightKg = "1.39,2.7,4.5,5.9,7.2,9.0,10.4,11.7,13.5,14.9,15.8,19.4,22.5,26.1,29.7,34.2,38.7,45.0,52.2,59.9,68.9,77.9,90.0,104.9,119.7,137.7,155.7,180.0,209.7",
-    mediumKg = "2.7,5.9,9.0,11.7,14.9,18.0,20.7,23.9,27.0,29.7,34.2,38.7,45.0,52.2,59.9,68.9,77.9,90.0,104.9,119.7,137.7,155.7,180.0,209.7,239.9,275.9,311.9,360.0,419.9",
-    heavyKg = "4.5,9.0,13.5,18.0,22.5,27.0,31.5,36.0,40.5,45.0,51.8,58.5,67.5,78.8,90.0,103.5,117.0,135.0,157.5,180.0,207.0,234.0,270.0,315.0,360.0,414.0,468.0,540.0,630.0";
+    ccLb = ["3,6,10,13,16,20,23,26,30,33,38,43,50,58,66,76,86,100,116,133,153,173,200,233,266,306,346,400,466", "6,13,20,26,33,40,46,53,60,66,76,86,100,116,133,153,173,200,233,266,306,346,400,466,533,613,693,800,933", "10,20,30,40,50,60,70,80,90,100,115,130,150,200,175,200,230,260,300,350,400,460,520,600,700,800,920,1040,1200,1400"],
+    ccKg = [ "1.39,2.7,4.5,5.9,7.2,9.0,10.4,11.7,13.5,14.9,15.8,19.4,22.5,26.1,29.7,34.2,38.7,45.0,52.2,59.9,68.9,77.9,90.0,104.9,119.7,137.7,155.7,180.0,209.7", "2.7,5.9,9.0,11.7,14.9,18.0,20.7,23.9,27.0,29.7,34.2,38.7,45.0,52.2,59.9,68.9,77.9,90.0,104.9,119.7,137.7,155.7,180.0,209.7,239.9,275.9,311.9,360.0,419.9", "4.5,9.0,13.5,18.0,22.5,27.0,31.5,36.0,40.5,45.0,51.8,58.5,67.5,78.8,90.0,103.5,117.0,135.0,157.5,180.0,207.0,234.0,270.0,315.0,360.0,414.0,468.0,540.0,630.0"];
 
 function pow(x, n) {
   var result = x;
@@ -26,9 +21,21 @@ function round1(x) {
 
 function validate(document) {
 
-    var elems = document.forms.data
-    var sizeMod = +elems.sizeMod.value;
-    var strength = +elems.strength.value
+    var strength = +document.getElementById('strength').value;
+    var sizeMod = +document.getElementById('sizeMod').value;
+    var bipedal = document.getElementById('bipedal').checked;
+    
+    function forQuadro() {
+        return (sizeMod==0.75) ? 1 :
+        (sizeMod>=0.5) ? sizeMod * 1.5 :
+        sizeMod * 2;
+    }
+    
+    sizeMod = (bipedal) ? sizeMod : forQuadro();
+    
+    var formTextLb = document.getElementById('textEng');
+    var formTextKg = document.getElementById('textRus');
+    var formTextMix = document.getElementById('textMix');
 
     function getCCValue(str){
         return str.split(",")[i]*mult*sizeMod;
@@ -46,8 +53,8 @@ function validate(document) {
         mult = 1;
     }
 
-    curLb = getCCValues([lightLb, mediumLb, heavyLb]);
-    curKg = getCCValues([lightKg, mediumKg, heavyKg]);
+    curLb = getCCValues(ccLb);
+    curKg = getCCValues(ccKg);
 
     // a[0]+"lb. or less", (a[0]+1)+"–"+a[1]+" lb.", (a[1]+1)+"–"+a[2]+" lb."
     // "до "b[0]+" кг", round(b[0]+0.1,1)+"–"+b[1]+" кг", (b[1]+0.1)+"–"+b[2]+" кг"
@@ -73,27 +80,24 @@ function validate(document) {
     "Поднять над землёй (Lift off ground): " + (curKg[2]*2) + " кг (" + (curLb[2]*2) + " lb.)\n"+
     "Толкать или тащить (Push or drag): " + (curKg[2]*5) + " кг (" + (curLb[2]*5) + " lb.)";
 
-    var formTextLb = document.getElementById('textEng');
-    formTextLb.value = textLb;
-    var formTextKg = document.getElementById('textRus');
-    formTextKg.value = textKg;
-    var formTextMix = document.getElementById('textMix');
-    formTextMix.value = textMix;
+    formTextLb.textContent = textLb;
+    formTextKg.textContent = textKg;
+    formTextMix.textContent = textMix;
           
-    updateCapasity(document, curLb, curKg);
+    updateCapasity(document);
 }
 
-function updateCapasity(document, curLb, curKg) {
+function updateCapasity(document) {
    
-    var weightKg = document.getElementById('weightKg').value;
+    var weightKg = document.getElementById('weightKg').checked;
     var weight = +document.getElementById('weight').value;
     
-    var curA = (weightKg=='on') ? curKg: curLb;
+    var curA = (weightKg) ? curKg: curLb;
     var penalty, notify;
 
     if (weight <= curA[0]){
         //light
-        penalty = "";
+        penalty = "Нет штрафов от веса.";
         notify = "panel panel-success";
     } else if (weight <= curA[1]) {
         //medium
@@ -118,15 +122,17 @@ function updateCapasity(document, curLb, curKg) {
             "Вы теряете все бонусы Ловкости и КД.\n" +
             "Скорость: 1.5 метра в раунд (полнораундовым действием).";
         } else if (weight <= curA[2]*5) {
-            penalty += "Этот вес можно толкать или перетаскивать.\n" +
+            penalty = "Этот вес можно толкать или перетаскивать.\n" +
             "Вы теряете все бонусы Ловкости и КД.\n" +
             "Скорость: 1.5 метра в раунд (полнораундовым действием).";        
         } else {
-            penalty += "\nВы не можете сдвинуть этот вес.";         
+            penalty = "Вы не можете сдвинуть этот вес.";         
         }
         notify = "panel panel-danger";
     }
     
-    var paramPenalty = document.getElementById('text').value = penalty;
+    var paramPenalty = document.getElementById('text').textContent = penalty;
     var paramNotify = document.getElementById('cpacity-info').className = notify;
 }
+
+validate(document);

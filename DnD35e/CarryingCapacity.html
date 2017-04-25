@@ -12,78 +12,85 @@
 
         <title>маленький моглась</title>
         <link href="style.css" rel="stylesheet">
-        <script src="scripts.js"></script>
     </head>
     <body>
         <div class="container">
             <h1>Carrying Capacity</h1>
             <div class="row">
                 <div class="col-sm-4 col-md-4"></div>
-                <div class="col-sm-4 col-md-4 well">
-                
-                    <form name="data">
-                        <div class="form-group">
-                            <label for="strength">Сила (Strength):</label>
-                            <input class="form-control" id="strength" type="number" size="2"  name="strength" min="1" max="99" value="10" required>
+                <div class="col-sm-4 col-md-4">
+                    
+                    <div id="carrying-info" class="panel panel-info">
+                        <div class="panel-heading">Подсчёт границ нагрузки</div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label for="strength">Сила (Strength):</label>
+                                <input class="form-control" id="strength" type="number" name="strength" min="1" max="99" value="10" required onkeyup="validate(document)" onchange="validate(document)">
+                            </div>
+                            <div class="form-group">
+                                <label>Опорные ноги:</label>
+                                <div class="btn-group" data-toggle="buttons">
+                                  <label class="btn btn-default active" onchange="validate(document)">
+                                    <input type="radio" name="options" id="bipedal" autocomplete="off" checked> две
+                                  </label>
+                                  <label class="btn btn-default" onchange="validate(document)">
+                                    <input type="radio" name="options" id="quadrupeds" autocomplete="off"> четыре
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="sizeMod">Размер (Size):</label>
+                                <select class="form-control" name="sizeMod" id="sizeMod" onchange="validate(document)">
+                                    <option value="0.125">Мелкий (Fine)</option>
+                                    <option value="0.25">Миниатюрный (Diminutive)</option>
+                                    <option value="0.5">Крошечный (Tiny)</option>
+                                    <option value="0.75">Маленький (Small)</option>
+                                    <option selected value="1">Средний (Medium)</option>
+                                    <option value="2">Большой (Large)</option>
+                                    <option value="4">Огромный (Huge)</option>
+                                    <option value="8">Громадный (Gargantuan)</option>
+                                    <option value="16">Колоссальный (Colossal)</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="sizeMod">Размер (Size):</label>
-                            <select class="form-control" name="sizeMod">
-                                <option value="0.125">Мелкий (Fine)</option>
-                                <option value="0.25">Миниатюрный (Diminutive)</option>
-                                <option value="0.5">Крошечный (Tiny)</option>
-                                <option value="0.75">Маленький (Small)</option>
-                                <option selected value="1">Средний (Medium)</option>
-                                <option value="2">Большой (Large)</option>
-                                <option value="4">Огромный (Huge)</option>
-                                <option value="8">Громадный (Gargantuan)</option>
-                                <option value="16">Колоссальный (Colossal)</option>
-                            </select>
-                        </div>
-                        <button type="button" class="btn btn-default btn-block" form="data" onclick="validate(document)">Пересчитать</button>
-                    </form>
-                </div>
-                <div class="col-sm-4 col-md-4"></div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 col-md-4"></div>
-                <div class="col-sm-4 col-md-4 well">
-                
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li class="active"><a href="#rus" aria-controls="rus" data-toggle="tab" aria-expanded="true">rus</a></li>
-                        <li><a href="#eng" aria-controls="eng" data-toggle="tab" aria-expanded="false">eng</a></li>
-                        <li><a href="#mix" aria-controls="mix" data-toggle="tab" aria-expanded="false">mix</a></li>
-                    </ul>
+                        <div class="panel-footer">
+                            
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="active"><a href="#rus" aria-controls="rus" data-toggle="tab" aria-expanded="true">rus (kg)</a></li>
+                                <li><a href="#eng" aria-controls="eng" data-toggle="tab" aria-expanded="false">eng (lb)</a></li>
+                                <li><a href="#mix" aria-controls="mix" data-toggle="tab" aria-expanded="false">mix (kg+lb)</a></li>
+                            </ul>
 
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="rus">
-                        <textarea id="textRus" readonly rows="6">Лёгкая нагрузка: 14.9 кг или меньше
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="rus">
+                                <pre id="textRus">Лёгкая нагрузка: 14.9 кг или меньше
 Средняя нагрузка: 15 – 29.7 кг
 Тяжёлая нагрузка: 29.8 – 45 кг
 Поднять над головой: 45 кг
 Поднять над землёй: 90 кг
-Толкать или тащить: 225 кг</textarea>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="eng">
-                        <textarea id="textEng" readonly rows="6">Light load: 33 lb. or less
+Толкать или тащить: 225 кг</pre>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="eng">
+                                <pre id="textEng">Light load: 33 lb. or less
 Medium load: 34–66 lb.
 Heavy load: 67–100 lb.
 Lift over head: 100 lb.
 Lift off ground: 200 lb.
-Push or drag: 500 lb.</textarea>    
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="mix">
-                        <textarea id="textMix" readonly rows="6">Лёгкая (Light load): 14.9 кг (33 lb. or less)
+Push or drag: 500 lb.</pre>    
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="mix">
+                                <pre id="textMix">Лёгкая (Light load): 14.9 кг (33 lb. or less)
 Средняя (Medium load): 15 – 29.7 кг (34–66 lb.)
 Тяжёлая (Heavy load): 29.8 – 45 кг (67–100 lb.)
 Поднять над головой (Lift over head): 45 кг (100 lb.)
 Поднять над землёй (Lift off ground): 90 кг (200 lb.)
-Толкать или тащить (Push or drag): 225 кг (500 lb.)</textarea>
+Толкать или тащить (Push or drag): 225 кг (500 lb.)</pre>
+                            </div>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                    
                 </div>
                 <div class="col-sm-4 col-md-4"></div>
             </div>
@@ -96,22 +103,19 @@ Push or drag: 500 lb.</textarea>
                         <div class="panel-heading">Переносимый вес</div>
                         <div class="panel-body">
                             <div class="input-group">
-                                <input type="text" class="form-control" type="number" size="5" name="weight" id="weight" min="1" max="99999" value="20" step="0.1" required>
+                                <input type="number" class="form-control" type="number" name="weight" id="weight" min="1" max="99999" value="20" step="0.1" required onkeyup="updateCapasity(document)" onchange="updateCapasity(document)">
 
                                 <div class="input-group-btn" data-toggle="buttons">
-                                    <label class="btn btn-default">
-                                    <input type="radio" name="unit" id="weightLb" autocomplete="off"> lb.
-                                    </label>
-                                    <label class="btn btn-default active">
-                                    <input type="radio" name="unit" id="weightKg" autocomplete="off" checked> кг
-                                    </label>
+                                    <label class="btn btn-default" for="weightLb" onchange="updateCapasity(document)">
+                                    <input type="radio" name="units" id="weightLb" autocomplete="off">lb.</label>
+                                    <label class="btn btn-default active" for="weightKg" onchange="updateCapasity(document)">
+                                    <input type="radio" name="units" id="weightKg" autocomplete="off" checked>кг</label>
                                 </div>
                             </div>
                         </div>
                         <div class="panel-footer">
                             
-                            <pre id="text">20 кг => Средняя Нагрузка
-Макс. Ловкость = +3
+                            <pre id="text">Макс. Ловкость = +3
 Штраф Проверки = -3
 Скорость: 9 м (30 ft.) = 6 м (20 ft.)
 Скорость: 6 м (30 ft.) = 4,5 м (15 ft.)
@@ -130,5 +134,8 @@ Push or drag: 500 lb.</textarea>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="https://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
         <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+        
+        <script src="scripts.js"></script>
+
     </body>
 </html>
