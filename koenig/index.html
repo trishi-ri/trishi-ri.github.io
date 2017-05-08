@@ -45,11 +45,13 @@
         <div class="col-lg-6">
           <h4>От площади Победы до Центрального парка</h4>
           <p>На площади находятся несколько торговых центров с магазинами и ресторанами, где можно остановиться перекусить и набраться сил для дальнейшей прогулки по городу.</p>
+          <audio src="mp3/wind.mp3" preload="auto" />
         </div>
 
         <div class="col-lg-6">
           <h4>Королевские ворота, музей янтаря и ещё кое-что интересное</h4>
           <p>Если вам повезло и в Калининграде стоит солнечная погода, советую вам после музея Янтаря прогуляться пешком или прокатиться на велосипеде вокруг Верхнего озера, а потом заглянуть в парк Юность.</p>
+          <audio src="mp3/wind.mp3" preload="auto" />
         </div>
       </div>
 
@@ -64,5 +66,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="audiojs/audio.min.js"></script>
+    <script>
+      audiojs.events.ready(function() {
+        var as = audiojs.createAll();
+      });
+    </script>
   </body>
 </html>
