@@ -1,3 +1,23 @@
+ul, ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+li {
+/*    line-height: 20px;*/
+  padding-bottom: 5px;
+}
+
 .templatemo_form	{  width: 100%; }
 .templatemo_form input{ 
 	float: left; 
@@ -39,3 +59,18 @@
 	font-size: 16px; 
 /*	color: #ffffff;*/
 }	
+
+ul#contact-info {
+  list-style: none;
+}
+
+ul#contact-info .glyphicon {
+    font-size: 20px;
+    float: left;
+    line-height: 25px;
+    margin-right: 10px;
+}
+
+ul#contact-info .field {
+    font-weight: bold;
+}
