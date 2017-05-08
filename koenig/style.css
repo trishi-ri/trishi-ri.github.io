@@ -98,48 +98,6 @@ li {
   padding-bottom: 5px;
 }
 
-.templatemo_form	{  width: 100%; }
-.templatemo_form input{ 
-	float: left; 
-	height: 34px; 
-	padding: 6px 12px; 
-/*	border-radius: 0px; */
-/*	background: #343536; */
-/*	border: 1px solid #4b5257; */
-	width: 100%;  
-	margin-top: 10px;
-/*	color: #cccccc;*/
-	}
-.templatemo_form textarea{
-	float: left; 
-	padding: 6px 12px; 
-	height: 130px;
-/*	border-radius: 0px; */
-/*	background: #343536; */
-/*	border: 1px solid #4b5257; */
-	margin-top: 10px; 
-/*	color: #cccccc;*/
-}
-.templatemo_form button.btn-primary{
-	float: left; 
-	width: 100%;
-	line-height: 34px;
-	text-align: center;
-/*	color: #ffffff;*/
-/*	border-radius: 0px;*/
-/*	background: #b69e40;*/
-/*	border: none;*/
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 600;
-	margin-top: 10px;
-}
-
-.templatemo_contacttitle	{ 
-	font-size: 16px; 
-/*	color: #ffffff;*/
-}	
-
 ul#contact-info {
   list-style: none;
 }
