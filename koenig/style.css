@@ -112,3 +112,30 @@ ul#contact-info .glyphicon {
 ul#contact-info .field {
     font-weight: bold;
 }
+
+.audiojs {
+  width: 100%;
+  background: #3c763d;
+  border-radius: 5px;
+}
+
+.audiojs .play-pause {
+  width: 38px; 
+}
+
+.audiojs .scrubber {
+  width: calc(100% - 160px);
+  background: rgb(133, 160, 133);
+}
+
+.audiojs .loaded {
+  background: #2b442b;
+}
+
+.audiojs .time {
+  margin: 0;
+}
+
+.audiojs .error-message {
+   width: auto; 
+}
