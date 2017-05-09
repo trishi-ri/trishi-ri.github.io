@@ -85,7 +85,6 @@ ul, ol {
 
 ul {
   display: block;
-  list-style-type: disc;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0px;
@@ -94,7 +93,6 @@ ul {
 }
 
 li {
-/*    line-height: 20px;*/
   padding-bottom: 5px;
 }
 
