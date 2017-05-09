@@ -137,3 +137,7 @@ ul#contact-info .field {
 .audiojs .error-message {
    width: auto; 
 }
+
+.glyphicon {
+  margin-right: 5px;
+}
