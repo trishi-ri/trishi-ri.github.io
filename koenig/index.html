@@ -12,6 +12,7 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="style.css" rel="stylesheet">
+    <link href="lightbox/jquery.lightbox.css" rel="stylesheet">
       
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -62,7 +63,30 @@
                 <p>Среди всех синих двухдольных перелётных волков этот зверь считался самым опасным и непредсказуемым. Его темнейшая грива из первосортных рассветных звёзд и речного тумана колыхалась под светом восходящих светил и даровала каждому миллиарды возможностей и совсем немного глупостей. Каждый из этих первозданных жирафов мечтал побывать на обратной стороне моря, заглядывал попеременно, то на запад, то на востог, но ни разу не восторгался ночными пейзажами и заповедными тропами. Напротив, они знали всех и всё, и поэтому следовали только за своими кошмарами и настоящими мечтами, ибо только они испаскали такой невообразимый свет знаний, который был просто необходим для достижения невозможных вершин человечества.</p>
                 <p>Иногда эти звери слонялись по свету, перемещаясь только по ночам и праздникам, чтобы никто не запутал их пути и не испугал внезапным узнаванием магических аспектов бессознательного. КАждый вторник и каждый четверг длинные полупрозрачные беседы текли и изменялись посредством перевоплоения в сны и прочие дни недели високосных годов.</p>
                 
-                
+                <div class="row">
+                  <div class="gallery">
+                    <div class="col-md-3 col-xs-6">
+                      <a href="images/gallery/9.jpg" class="thumbnail" data-caption="это пример изображения">
+                        <img src="images/gallery/9.jpg">
+                      </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                      <a href="images/gallery/6.jpg" class="thumbnail" data-caption="это пример изображения">
+                        <img src="images/gallery/6.jpg">
+                      </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                      <a href="images/gallery/7.jpg" class="thumbnail" data-caption="это пример изображения">
+                        <img src="images/gallery/7.jpg">
+                      </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                      <a href="images/gallery/8.jpg" class="thumbnail" data-caption="это пример изображения">
+                        <img src="images/gallery/8.jpg">
+                      </a>
+                    </div>
+                  </div>
+                </div>
                                
                 <div class="map-button">
                   <!--<a href="https://yandex.ru/maps/-/C6q8645n"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Показать маршрут в Яндекс.Картах</a>-->
@@ -102,7 +126,30 @@
               <p>Под забытыми всеми альбатросами летит оранжевый полумесяц и смеётся от восторга. Между семи ветров реет над опрокинутой землёй победный парус новых викингов. Их голоса звенят стаей рыб под глубиннымми течениями бездонного океана, их песни берут за душу своей красотой и самобытностью, их сказки пронзают искренностью и вызывают восторг необычайной удачливостью своих персонажей. Хором кричат волны, шум и плеск каждой из них множится надвое эхом морских сирен и нереид. Они зовут славных крылатых собак, храбрых и неусыпных стражей между теми мирами и этим, и сотней других не вошедших в этой число. Вечер хмурится, но вновь улыбается свежестью моря, ласковым ветром и игривыми пенными брызгами. В этих плещущихся волнах мерещутся водные духи и звери, что играют беззаботно и весело от зари до зари.</p>
               <p>Шум и плеск безветных сливается с гомоном и плясками многоцветных рыб, их лучистые тела переливаются радугами и солнцами, само Море приходит насладиться этими волшебными переливами красок и света.</p>
               
-              
+              <div class="row">
+                  <div class="gallery-2">
+                    <div class="col-md-3 col-xs-6">
+                      <a href="images/gallery/1.jpg" class="thumbnail" data-caption="это пример изображения">
+                        <img src="images/gallery/1.jpg">
+                      </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                      <a href="images/gallery/2.jpg" class="thumbnail" data-caption="это пример изображения">
+                        <img src="images/gallery/2.jpg">
+                      </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                      <a href="images/gallery/3.jpg" class="thumbnail" data-caption="это пример изображения">
+                        <img src="images/gallery/3.jpg">
+                      </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                      <a href="images/gallery/5.jpg" class="thumbnail" data-caption="это пример изображения">
+                        <img src="images/gallery/5.jpg">
+                      </a>
+                    </div>
+                  </div>
+                </div>
                
                 <div class="map-button">
                   <!--<a href="https://yandex.ru/maps/-/C6q8jMiq"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Открыть маршрут в Яндекс.Картах</a>-->
@@ -162,6 +209,14 @@
     <script>
       audiojs.events.ready(function() {
         var as = audiojs.createAll();
+      });
+    </script>
+    <script src="lightbox/jquery.lightbox.js"></script>
+    <script>
+      $(function()
+        {
+        $('.gallery a').lightbox(); 
+        $('.gallery-2 a').lightbox();
       });
     </script>
   </body>
