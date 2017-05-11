@@ -151,12 +151,3 @@ ul#contact-info .field {
 .map-button {
   text-align: center;
 }
-
-#message {
-  min-width: 100%;
-  max-width: 100%;
-}
-
-.send-button {
-  text-align: right;
-}
