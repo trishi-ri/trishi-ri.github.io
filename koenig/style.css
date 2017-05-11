@@ -86,12 +86,8 @@ ul{
 }
 
 ul#contact-info {
-  margin: 0 0 10px 25px;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 40px;
+  margin-left: 25px;
+  margin-bottom: 10px;
 }
 
 ul#contact-info li {
