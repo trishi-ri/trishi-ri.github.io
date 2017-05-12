@@ -156,6 +156,6 @@ ul#contact-info .field {
   text-align: center;
 }
 
-.play-pause>p, .time{
+.time{
   border: 1px solid red;
 }
