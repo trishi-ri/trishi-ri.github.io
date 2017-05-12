@@ -120,7 +120,7 @@ ul#contact-info .field {
 }
 
 .audiojs .scrubber {
-  width: calc(100% - 160px);
+  width: calc(100% - 165px);
   background: rgb(133, 160, 133);
 }
 
@@ -156,6 +156,6 @@ ul#contact-info .field {
   text-align: center;
 }
 
-.time{
+.play-pause>p, .time{
   border: 1px solid red;
 }
