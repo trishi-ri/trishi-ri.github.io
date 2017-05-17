@@ -44,17 +44,15 @@ function validateEmail(email) {
             $("#send-text").replaceWith("<em>отправка...</em>");
             $.ajax({
               type: 'POST',
-              url: 'sendmessage.php',
+              url: 'sendmessage.php?v2',
               data: $("#mailto").serialize(),
               success: function(data) {
                 if(data == "true") {
                   $("#mailto").fadeOut("fast", function(){
-                  $("#send-text").replaceWith("<em>Сообщение отправлено!</em>");
-                  alert("Ваше сообщение отправлено!");
+                    alert("Ваше сообщение отправлено!");
                   });
                 }
                 else {
-                  $("#send-text").replaceWith("<em>Ошибка при отправке сообщения!</em>");
                   alert("Ошибка при отправке!");
                 }
               }
