@@ -41,7 +41,6 @@ function validateEmail(email) {
 
           if(mailvalid == true && msglen >= 1) {
             // если обе проверки пройдены
-            // сначала мы скрываем кнопку отправки
             $("#send-text").replaceWith("<em>отправка...</em>");
             $.ajax({
               type: 'POST',
