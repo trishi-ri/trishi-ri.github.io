@@ -44,7 +44,7 @@ function validateEmail(email) {
             $("#send-text").replaceWith("<em>отправка...</em>");
             $.ajax({
               type: 'POST',
-              url: 'sendmessage.php?v2',
+              url: 'send-message.php',
               data: $("#mailto").serialize(),
               success: function(data) {
                 if(data == "true") {
