@@ -157,6 +157,14 @@ ul#contact-info .field {
   text-align: center;
 }
 
+#message {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.send-button {
+  text-align: right;
+}
 .media-left {
   padding-right: 20px;
 }
