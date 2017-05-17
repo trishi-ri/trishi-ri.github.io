@@ -1,10 +1,10 @@
 <?php
-  $sendto   = "trishi-ri@ya.ru"; // Обязательно измените e-mail на свой
+  $sendto   = "testkoeing@trishi-ri.ru"; // Обязательно измените e-mail на свой
   $usermail = $_POST['email'];
   $username = $_POST['name'];
   $content  = nl2br($_POST['message']);
   // Формирование заголовка письма
-  $subject  = "Новое сообщение";
+  $subject  = "Новое сообщение с сайта Koeing";
   $headers  = "From: " . strip_tags($usermail) . "\r\n";
   $headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
