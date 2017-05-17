@@ -48,10 +48,14 @@ function validateEmail(email) {
               data: $("#mailto").serialize(),
               success: function(data) {
                 if(data == "true") {
+                  $("#mailto").fadeOut("fast", function(){
                   $("#send-text").replaceWith("<em>Сообщение отправлено!</em>");
+                  alert("Ваше сообщение отправлено!");
+                  });
                 }
                 else {
                   $("#send-text").replaceWith("<em>Ошибка при отправке сообщения!</em>");
+                  alert("Ошибка при отправке!");
                 }
               }
             });
