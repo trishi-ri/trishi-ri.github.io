@@ -1,5 +1,5 @@
 <?php
-  $sendto   = "testkoeing@trishi-ri.ru"; // Обязательно измените e-mail на свой
+  $sendto   = "trishi-ri@ya.ru"; // Обязательно измените e-mail на свой
   $usermail = $_POST['email'];
   $username = $_POST['name'];
   $content  = nl2br($_POST['message']);
@@ -17,7 +17,7 @@
   $msg .= "<p><strong>Сообщение:</strong> ".$content."</p>\r\n";
   $msg .= "</body></html>";
   // отправка сообщения
-  if(@mail($sendto, $subject, $msg, $headers, "-ftestkoeing@trishi-ri.ru")) {
+  if(@mail($sendto, $subject, $msg, $headers, "-ftrishi-ri@ya.ru")) {
    echo "true";
   } else {
    echo "false";

@@ -52,7 +52,6 @@ function validateEmail(email) {
                 }
                 else {
                   $("#send-text").replaceWith("<em>Ошибка при отправке сообщения!</em>");
-                  alert("Ошибка при отправке!");                  
                 }
               }
             });
