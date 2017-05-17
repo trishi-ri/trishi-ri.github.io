@@ -8,6 +8,7 @@
   $headers  = "From: " . strip_tags($usermail) . "\r\n";
   $headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
+  $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
   $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
   // Формирование тела письма
   $msg  = "<html><body style='font-family:Arial,sans-serif;'>";
