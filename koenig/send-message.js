@@ -41,7 +41,7 @@ function validateEmail(email) {
 
           if(mailvalid == true && msglen >= 1) {
             // если обе проверки пройдены
-            $("#send-text").replaceWith("<em>отправка...</em>");
+            $("#send-text").html("<em>отправка...</em>");
             $.ajax({
               type: 'POST',
               url: 'send-message.php',
@@ -49,11 +49,13 @@ function validateEmail(email) {
               success: function(data) {
                 if(data == "true") {
                   $("#mailto").fadeOut("fast", function(){
-                    alert("Ваше сообщение отправлено!");
-                  });
+                    $("#send-text").html("<em>Ваше сообщение успешно отправлено!</em>");
+                  });                  
                 }
                 else {
-                  alert("Ошибка при отправке!");
+                  $("#mailto").fadeOut("fast", function(){
+                    $("#send-text").html("<em>Ошибка при отправке! Пожалуйста, воспользуйтесь другим способом связи.</em>");
+                  });  
                 }
               }
             });
