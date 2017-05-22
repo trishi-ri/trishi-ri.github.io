@@ -18,7 +18,7 @@
   $msg .= "<p><strong>Сообщение:</strong> ".$content."</p>\r\n";
   $msg .= "</body></html>";
   // отправка сообщения
-  if(@mail($sendto, $subject, $msg, $headers, "-ftrishi-ri@ya.ru")) {
+  if(@mail($sendto, $subject, $msg, $headers)) {
    echo "true";
   } else {
    echo "false";
