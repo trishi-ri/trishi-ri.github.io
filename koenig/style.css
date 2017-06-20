@@ -155,3 +155,7 @@ ul#contact-info .field {
 .map-button {
   text-align: center;
 }
+
+.media-left {
+  padding-right: 20px;
+}
