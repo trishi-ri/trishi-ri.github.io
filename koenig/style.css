@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  min-width: 430px;
+  min-width: 356px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -90,16 +90,17 @@ ul{
 }
 
 ul#contact-info {
-  margin-left: 25px;
-  margin-bottom: 10px;
+/*  margin-left: 15px;*/
+  margin-top: 10px;
 }
 
 ul#contact-info li {
   padding-bottom: 5px;
+  word-wrap: break-word;
 }
 
 ul#contact-info .glyphicon {
-    font-size: 20px;
+/*    font-size: 20px;*/
     float: left;
     line-height: 25px;
     margin-right: 10px;
@@ -158,4 +159,8 @@ ul#contact-info .field {
 
 .media-left {
   padding-right: 20px;
+}
+
+.header-center{
+  text-align: center;
 }
