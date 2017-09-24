@@ -12,7 +12,7 @@ body{
 }
 .header, h1{
 /*  цвет заголовка  */
-    color: #666666;
+    color: #663366;
 /*  цвет фона заголовка  */
     background-color: transparent;
 /*  размер шрифта заголовка  */
@@ -20,15 +20,15 @@ body{
 }
 .offtop{
 /*  цвет оффтопа  */
-    color: #003333;
+    color: #330033;
 }
 a{
 /*  цвет ссылки  */
-    color: #999999;
+    color: #996699;
 }
 .bordered{
 /*  цвет границы  */
-    border-color: #333333;
+    border-color: #330033;
 }
 .posts_area, .menu_area, .epigraph_area{
 /*  цвет фона записи  */
