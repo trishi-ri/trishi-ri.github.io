@@ -1,0 +1,62 @@
+body{
+/*  цвет записей  */
+    color: #fff;
+/*  цвет фона дневника  */
+    background-color: transparent;
+/*  фоновое изображение  */
+    background-image: url(background.jpg);
+/*  стиль шрифта  */
+    font-family: "Trebuchet MS", serif;
+/*  размер шрифта основных текстов  */
+    font-size: 80%;
+}
+.header, h1{
+/*  цвет заголовка  */
+    color: #663366;
+/*  цвет фона заголовка  */
+    background-color: transparent;
+/*  размер шрифта заголовка  */
+/*    font-size: 90%;*/
+}
+.offtop{
+/*  цвет оффтопа  */
+    color: #330033;
+}
+a{
+/*  цвет ссылки  */
+    color: #996699;
+}
+.bordered{
+/*  цвет границы  */
+    border-color: #330033;
+}
+.posts_area, .menu_area, .epigraph_area{
+/*  цвет фона записи  */
+    background-color: #000;
+}
+#img_epigraph{
+/*  путь к картинке для эпиграфа  */
+    background-image: url("epigraph.jpg");
+/*  нужная высота картинки, если она не подходит  */
+    height: 500px;
+}
+[class^="post_area_"] .avatar_area{
+/*  путь к картинке для аватара  */
+    background-image: url("avatar_1.jpg");
+}
+.post_area_2 .avatar_area{
+/*  путь к картинке для аватара 2  */
+    background-image: url("avatar_2.jpg");
+}
+.post_area_3 .avatar_area{
+/*  путь к картинке для аватара 3  */
+    background-image: url("avatar_3.jpg");
+}
+#photo_diary{
+/*  путь к фото профиля  */
+    background-image: url("photo.jpg");
+}
+
+#epigraph iframe{
+    height: 530px;
+}
