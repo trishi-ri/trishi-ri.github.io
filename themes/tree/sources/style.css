@@ -1,6 +1,6 @@
 body{
 /*  цвет записей  */
-    color: #000;
+    color: #fff;
 /*  цвет фона дневника  */
     background-color: transparent;
 /*  фоновое изображение  */
@@ -12,7 +12,7 @@ body{
 }
 .header, h1{
 /*  цвет заголовка  */
-    color: #669999;
+    color: #663366;
 /*  цвет фона заголовка  */
     background-color: transparent;
 /*  размер шрифта заголовка  */
@@ -20,19 +20,19 @@ body{
 }
 .offtop{
 /*  цвет оффтопа  */
-    color: #ccc;
+    color: #330033;
 }
 a{
 /*  цвет ссылки  */
-    color: #666;
+    color: #996699;
 }
 .bordered{
 /*  цвет границы  */
-    border-color: #009999;
+    border-color: #330033;
 }
 .posts_area, .menu_area, .epigraph_area{
 /*  цвет фона записи  */
-    background-color: #fff;
+    background-color: #000;
 }
 #img_epigraph{
 /*  путь к картинке для эпиграфа  */
