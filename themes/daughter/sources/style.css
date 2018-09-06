@@ -2,11 +2,10 @@ body{
 /*  цвет записей  */
     color: #e3cda3;
 /*  цвет фона дневника  */
-    background-color: transparent;
 /*  фоновое изображение  */
-    background-image: url(background.jpg);
+    background: transparent url(background.jpg);
 /*  стиль шрифта  */
-    font-family: Verdana;
+    font-family: Verdana, serif;
 /*  размер шрифта основных текстов  */
     font-size: 70%;
 }

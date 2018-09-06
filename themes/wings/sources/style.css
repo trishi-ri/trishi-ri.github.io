@@ -40,15 +40,15 @@ a{
 /*  нужная высота картинки, если она не подходит  */
     height: 300px;
 }
-[class^="post_area_"] #avatar_area{
+[class^="post_area_"] .avatar_area{
 /*  путь к картинке для аватара  */
     background-image: url("avatar.jpg");
 }
-.post_area_2 #avatar_area{
+.post_area_2 .avatar_area{
 /*  путь к картинке для аватара 2  */
     background-image: url("avatar_2.jpg");
 }
-.post_area_3 #avatar_area{
+.post_area_3 .avatar_area{
 /*  путь к картинке для аватара 3  */
     background-image: url("avatar_3.jpg");
 }
