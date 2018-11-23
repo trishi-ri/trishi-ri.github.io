@@ -1,0 +1,9 @@
+html, body {
+    height: 100%;
+}
+
+.scrollspy-items {
+    position: relative;
+    max-height: 293px;
+    overflow: auto;
+}
