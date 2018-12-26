@@ -98,7 +98,7 @@ function updateCapasity(document) {
     if (weight <= curA[0]){
         //light
         penalty = "Нет штрафов от веса.";
-        notify = "panel panel-success";
+        notify = "card border-success";
     } else if (weight <= curA[1]) {
         //medium
         penalty = "Макс. Ловкость = +3\n" +
@@ -106,7 +106,7 @@ function updateCapasity(document) {
         "Скорость: 9 м (30 ft.) = 6 м (20 ft.)\n" +
         "Скорость: 6 м (30 ft.) = 4,5 м (15 ft.)\n" +
         "Скорость: бег (30 ft.) = х4";
-        notify = "panel panel-info";
+        notify = "card border-info";
     } else if (weight <= curA[2]) {
         //heavy
         penalty = "Макс. Ловкость = +1\n" +
@@ -114,7 +114,7 @@ function updateCapasity(document) {
         "Скорость: 9 м (30 ft.) = 6 м (20 ft.)\n" +
         "Скорость: 6 м (30 ft.) = 4,5 м (15 ft.)\n" +
         "Скорость: бег (30 ft.) = х3";
-        notify = "panel panel-warning";
+        notify = "card border-warning";
     } else {
         //overload
         if (weight <= curA[2]*2) {
@@ -128,7 +128,7 @@ function updateCapasity(document) {
         } else {
             penalty = "Вы не можете сдвинуть этот вес.";         
         }
-        notify = "panel panel-danger";
+        notify = "card border-danger";
     }
     
     var paramPenalty = document.getElementById('text').textContent = penalty;

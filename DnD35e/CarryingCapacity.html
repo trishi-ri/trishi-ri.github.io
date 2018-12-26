@@ -8,7 +8,7 @@
 <!--        <link rel="icon" href="favicon.ico">-->
 
         <!-- Bootstrap core CSS -->
-        <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
         <title>маленький моглась</title>
         <link href="style.css" rel="stylesheet">
@@ -16,29 +16,27 @@
     <body>
         <div class="container">
             <h1>Carrying Capacity</h1>
-            <div class="row">
-                <div class="col-sm-4 col-md-4"></div>
-                <div class="col-sm-4 col-md-4">
-                    
-                    <div id="carrying-info" class="panel panel-info">
-                        <div class="panel-heading">Подсчёт границ нагрузки</div>
-                        <div class="panel-body">
+            <div class="row my-3">
+                <div class="col">
+                    <div id="carrying-info" class="card border-info">
+                        <div class="card-header">Подсчёт границ нагрузки</div>
+                        <div class="card-body">
                             <div class="form-group">
                                 <label for="strength">Сила (Strength):</label>
                                 <input class="form-control" id="strength" type="number" name="strength" min="1" max="99" value="10" required onkeyup="validate(document)" onchange="validate(document)">
                             </div>
                             <div class="form-group">
                                 <label>Опорные ноги:</label>
-                                <div class="btn-group" data-toggle="buttons">
-                                  <label class="btn btn-default active" onchange="validate(document)">
+                                <div class="btn-group btn-group-toggle ml-1" data-toggle="buttons">
+                                    <label class="btn btn-light active" onchange="validate(document)">
                                     <input type="radio" name="options" id="bipedal" autocomplete="off" checked> две
-                                  </label>
-                                  <label class="btn btn-default" onchange="validate(document)">
+                                    </label>
+                                    <label class="btn btn-light" onchange="validate(document)">
                                     <input type="radio" name="options" id="quadrupeds" autocomplete="off"> четыре
-                                  </label>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group mb-0">
                                 <label for="sizeMod">Размер (Size):</label>
                                 <select class="form-control" name="sizeMod" id="sizeMod" onchange="validate(document)">
                                     <option value="0.125">Мелкий (Fine)</option>
@@ -51,89 +49,95 @@
                                     <option value="8">Громадный (Gargantuan)</option>
                                     <option value="16">Колоссальный (Colossal)</option>
                                 </select>
-                            </div>
+                            </div> 
                         </div>
-                        <div class="panel-footer">
-                            
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li class="active"><a href="#rus" aria-controls="rus" data-toggle="tab" aria-expanded="true">rus (kg)</a></li>
-                                <li><a href="#eng" aria-controls="eng" data-toggle="tab" aria-expanded="false">eng (lb)</a></li>
-                                <li><a href="#mix" aria-controls="mix" data-toggle="tab" aria-expanded="false">mix (kg+lb)</a></li>
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="rus">
-                                <pre id="textRus">Лёгкая нагрузка: 14.9 кг или меньше
-Средняя нагрузка: 15 – 29.7 кг
-Тяжёлая нагрузка: 29.8 – 45 кг
-Поднять над головой: 45 кг
-Поднять над землёй: 90 кг
-Толкать или тащить: 225 кг</pre>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="eng">
-                                <pre id="textEng">Light load: 33 lb. or less
-Medium load: 34–66 lb.
-Heavy load: 67–100 lb.
-Lift over head: 100 lb.
-Lift off ground: 200 lb.
-Push or drag: 500 lb.</pre>    
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="mix">
-                                <pre id="textMix">Лёгкая (Light load): 14.9 кг (33 lb. or less)
-Средняя (Medium load): 15 – 29.7 кг (34–66 lb.)
-Тяжёлая (Heavy load): 29.8 – 45 кг (67–100 lb.)
-Поднять над головой (Lift over head): 45 кг (100 lb.)
-Поднять над землёй (Lift off ground): 90 кг (200 lb.)
-Толкать или тащить (Push or drag): 225 кг (500 lb.)</pre>
-                            </div>
+                        <div class="card-footer">
+                            <div class="card">
+                                <div class="card-header">
+                                    <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                                        <li class="nav-item"><a class="nav-link active" href="#rus" aria-controls="rus" data-toggle="tab" aria-expanded="true">rus (kg)</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#eng" aria-controls="eng" data-toggle="tab" aria-expanded="false">eng (lb)</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#mix" aria-controls="mix" data-toggle="tab" aria-expanded="false">mix (kg+lb)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="rus">
+                                            <pre id="textRus" class="mb-0">
+                                                Лёгкая нагрузка: 14.9 кг или меньше
+                                                Средняя нагрузка: 15 – 29.7 кг
+                                                Тяжёлая нагрузка: 29.8 – 45 кг
+                                                Поднять над головой: 45 кг
+                                                Поднять над землёй: 90 кг
+                                                Толкать или тащить: 225 кг
+                                            </pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="eng">
+                                            <pre id="textEng" class="mb-0">
+                                                Light load: 33 lb. or less
+                                                Medium load: 34–66 lb.
+                                                Heavy load: 67–100 lb.
+                                                Lift over head: 100 lb.
+                                                Lift off ground: 200 lb.
+                                                Push or drag: 500 lb.
+                                            </pre>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="mix">
+                                            <pre id="textMix" class="mb-0">
+                                                Лёгкая (Light load): 14.9 кг (33 lb. or less)
+                                                Средняя (Medium load): 15 – 29.7 кг (34–66 lb.)
+                                                Тяжёлая (Heavy load): 29.8 – 45 кг (67–100 lb.)
+                                                Поднять над головой (Lift over head): 45 кг (100 lb.)
+                                                Поднять над землёй (Lift off ground): 90 кг (200 lb.)
+                                                Толкать или тащить (Push or drag): 225 кг (500 lb.)
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-4"></div>
             </div>
             
-            <div class="row">
-                <div class="col-sm-4 col-md-4"></div>
-                <div class="col-sm-4 col-md-4">
+            <div class="row my-3">
+                <div class="col">
                 
-                    <div id="cpacity-info" class="panel panel-info">
-                        <div class="panel-heading">Переносимый вес</div>
-                        <div class="panel-body">
+                    <div id="cpacity-info" class="card">
+                        <div class="card-header">Переносимый вес</div>
+                        <div class="card-body">
                             <div class="input-group">
                                 <input type="number" class="form-control" type="number" name="weight" id="weight" min="1" max="99999" value="20" step="0.1" required onkeyup="updateCapasity(document)" onchange="updateCapasity(document)">
 
-                                <div class="input-group-btn" data-toggle="buttons">
-                                    <label class="btn btn-default" for="weightLb" onchange="updateCapasity(document)">
-                                    <input type="radio" name="units" id="weightLb" autocomplete="off">lb.</label>
-                                    <label class="btn btn-default active" for="weightKg" onchange="updateCapasity(document)">
-                                    <input type="radio" name="units" id="weightKg" autocomplete="off" checked>кг</label>
+                                <div class="input-group-append btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-outline-secondary" for="weightLb" onchange="updateCapasity(document)">
+                                    <input type="radio" name="units" id="weightLb" autocomplete="off"> lb.</label>
+                                    <label class="btn btn-outline-secondary active" for="weightKg" onchange="updateCapasity(document)">
+                                    <input type="radio" name="units" id="weightKg" autocomplete="off" checked> кг</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="panel-footer">
-                            
-                            <pre id="text">Макс. Ловкость = +3
-Штраф Проверки = -3
-Скорость: 9 м (30 ft.) = 6 м (20 ft.)
-Скорость: 6 м (30 ft.) = 4,5 м (15 ft.)
-Скорость: бег (30 ft.) = х4</pre>
+                        <div class="card-footer">                            
+                            <pre id="text" class="mb-0">
+                                Макс. Ловкость = +3
+                                Штраф Проверки = -3
+                                Скорость: 9 м (30 ft.) = 6 м (20 ft.)
+                                Скорость: 6 м (30 ft.) = 4,5 м (15 ft.)
+                                Скорость: бег (30 ft.) = х4
+                            </pre>
                         </div>
                     </div>
                     
                 </div>
-                <div class="col-sm-4 col-md-4"></div>
             </div>
             
         </div>   
         <!-- Bootstrap core JavaScript
             ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="https://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
-        <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         
         <script src="scripts.js"></script>
 
