@@ -1,0 +1,22 @@
+$green: #2ecc71;
+$white: #fff;
+$gray: #5a5a5a;
+$light_gray: #b4b4b4;
+
+$btn-get_app-background: $white;
+$btn-get_app-color: $green;
+
+$feature_circle-bg: #e7e7e7;
+
+$white-text-color: $gray;
+$white-text_accent-color: $green;
+$green-text-color: $gray;
+$white-text_accent-color: $green;
+
+$meal_time-bg: #f9f9f9;
+$meal_time_header-color: $green;
+$meal_time_text-color: $gray;
+$meal_time_values-color: $green;
+$meal_time_values-separator_bg: $light-gray;
+$meal_time_time-color: $green;
+$meal_time_pm-color: $light-gray;
