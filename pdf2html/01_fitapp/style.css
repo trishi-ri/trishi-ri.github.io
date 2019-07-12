@@ -4,6 +4,10 @@ body {
     font-size: 18px;
 }
 
+h2 {
+    font-size: 48px;
+}
+
 .container {
     min-width: 720px;
 }
@@ -25,10 +29,6 @@ body {
 
 .bg-fitapp-white .text-accent {
     color: #2ecc71;
-}
-
-.bg-fitapp-white h2 {
-    font-size: 48px;
 }
 
 .bg-fitapp-white p {
@@ -79,6 +79,7 @@ body {
 }
 
 #about {
+    font-family: Roboto-Light, sans-serif;
     padding-top: 145px;
     background: url("images/about/bg-apple-part.png") left 10% no-repeat fixed,
     url("images/about/bg-banana.png") 45% 10% no-repeat fixed,
