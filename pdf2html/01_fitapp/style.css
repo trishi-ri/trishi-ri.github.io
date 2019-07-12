@@ -1,0 +1,368 @@
+body {
+    font-family: Roboto, sans-serif;
+    min-width: 720px;
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+.container {
+    min-width: 720px;
+}
+
+.bg-fitapp-green {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.bg-fitapp-green a {
+    color: white;
+}
+
+.bg-fitapp-white {
+    background-color: #fff;
+    color: #000;
+    font-family: Roboto-Light, sans-serif;
+}
+
+.bg-fitapp-white .text-accent {
+    color: #2ecc71;
+}
+
+.bg-fitapp-white p {
+    color: #5a5a5a;
+}
+
+.navbar-fitapp {
+    position: absolute;
+    background: transparent;
+    width: 100%;
+}
+
+.navbar-fitapp .navbar-brand {
+    font-family: "Segoe UI Black", sans-serif;
+    font-size: 39px;
+    font-style: italic;
+}
+
+.navbar-fitapp.bg-fitapp-green .nav-link-fitapp:hover {
+    text-decoration: underline;
+}
+
+.navbar-fitapp.bg-fitapp-green .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    border-color: rgba(0, 0, 0, .1);
+}
+
+.navbar-fitapp.bg-fitapp-green .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-fitapp .navbar-collapse {
+    flex-grow: unset;
+}
+
+.navbar-fitapp .nav-item {
+    margin: 0 19px;
+}
+
+.navbar-fitapp .btn-fitapp {
+    margin-left: 5px;
+}
+
+.btn-fitapp {
+    border-radius: 20px;
+    font-family: Roboto-Bold, sans-serif;
+    font-weight: bold;
+}
+
+#about {
+    font-family: Roboto-Light, sans-serif;
+    padding-top: 145px;
+    background: url("images/about/bg-apple-part.png") left 10% no-repeat fixed,
+    url("images/about/bg-banana.png") 45% 10% no-repeat fixed,
+    url("images/about/bg-strawberry.png") 50% 70% no-repeat fixed,
+    url("images/about/bg-apple.png") 80% 55% no-repeat fixed,
+    url("images/about/bg-tomato.png") 95% 20% no-repeat fixed,
+    #2ecc71;
+}
+
+#about .fitapp-icon {
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 60px rgba(48, 60, 17, 0.15);
+}
+
+#about h2 {
+    font-size: 64px;
+}
+
+#about h2 .text-accent {
+    font-family: Roboto-Bold, sans-serif;
+}
+
+#about .wrapper {
+    overflow: hidden;
+}
+
+#about .img-iphone {
+    float: right;
+    margin-right: -55px;
+    margin-bottom: -68%;
+}
+
+img.brightness-3 {
+    filter: brightness(3);
+}
+
+#features {
+    z-index: 0;
+    position: relative;
+}
+
+#features h2 {
+    margin-bottom: 15px;
+}
+
+.nav-fitapp-circles {
+    position: absolute;
+    right: 0;
+    top: calc(25% - 50px);
+    width: 200px;
+    margin: 40px 40px 40px auto;
+    border: solid 1px rgba(1, 1, 1, .15);
+    border-left: 0;
+}
+
+.nav-fitapp-circles-item {
+    display: block;
+    width: 60px;
+    background-color: #e7e7e7;
+    position: absolute;
+    border-radius: 50%;
+    padding: 14px;
+    transition: 0.4s;
+    border: 3px solid white;
+}
+
+.nav-fitapp-circles-item:hover {
+    transform: scale(1.25, 1.25);
+    box-shadow: 0 0 20px 10px rgba(14, 65, 36, .05);
+}
+
+.nav-fitapp-circles-item.active {
+    background-color: #2ecc71;
+    transform: scale(1.25, 1.25);
+    box-shadow: 0 0 20px 10px rgba(14, 65, 36, .05);
+}
+
+.nav-fitapp-circles-item img {
+    width: 26px;
+    filter: invert(1);
+    transition: 0.4s;
+}
+
+#features .img-iphone {
+    max-height: 700px;
+    margin-left: -30px;
+    margin-top: 70px;
+    width: 75%;
+}
+
+#simple {
+    text-align: center;
+    padding-top: 100px;
+    background: url("images/simple/bg-pepper.png") 10% 45% no-repeat fixed,
+    url("images/simple/bg-apple.png") 24% 90% no-repeat fixed,
+    url("images/simple/bg-banana.png") 77% 95% no-repeat fixed,
+    url("images/simple/bg-strawberry.png") 85% 50% no-repeat fixed,
+    #f9f9f9;
+}
+
+#simple p {
+    margin-bottom: 90px;
+}
+
+#simple img {
+    margin-bottom: -22%;
+    z-index: 1;
+}
+
+#simple img:first-of-type, #simple img:last-of-type {
+    position: absolute;
+    z-index: 0;
+    top: 18%;
+}
+
+#simple img:first-of-type {
+    right: 59%;
+}
+
+#simple img:last-of-type {
+    left: 59%;
+}
+
+#manage {
+    z-index: 1;
+    position: relative;
+    padding: 150px 0;
+}
+
+#manage .fitapp-plan {
+    width: 420px;
+    border-radius: 8px;
+    box-shadow: 0 0 60px rgba(15, 65, 36, 0.05);
+}
+
+#manage .fitapp-plan:nth-of-type(2) {
+    width: 100%;
+    margin: 25px 0;
+}
+
+#manage .fitapp-plan:nth-of-type(2) h6 {
+    font-size: 20px;
+}
+
+#manage .fitapp-plan .text-accent, #manage .fitapp-plan_time {
+    font-family: Roboto-Bold, sans-serif;
+}
+
+#manage .fitapp-plan_info {
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+#manage .fitapp-plan:nth-of-type(2) .fitapp-plan_info {
+    font-size: 15px;
+}
+
+#manage .fitapp-plan_info .separator-dot {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #b4b4b4;
+}
+
+#manage .fitapp-plan:nth-of-type(2) .separator-dot {
+    width: 4px;
+    height: 4px;
+}
+
+#manage .fitapp-plan_time {
+    text-align: right;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+#manage .fitapp-plan_time .text-accent {
+    font-size: 25px;
+}
+
+#manage .fitapp-plan_time_interval {
+    color: #b4b4b4;
+}
+
+#download {
+    padding: 100px 0;
+    text-align: center;
+    font-family: Roboto-Light, sans-serif;
+    background: url("images/download/bg-tomato.png") left 90% no-repeat fixed,
+    url("images/download/bg-pepper.png") 17% 80% no-repeat fixed,
+    url("images/download/bg-strawberry.png") 25% bottom no-repeat fixed,
+    url("images/download/bg-banana.png") 85% 75% no-repeat fixed,
+    url("images/download/bg-apple.png") right bottom no-repeat fixed,
+    #2ecc71;
+}
+
+#download h2 .text-accent {
+    font-family: Roboto-Bold, sans-serif;
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199px) {
+
+    #features .nav-fitapp-circles {
+        top: calc(25% - 60px);
+        right: -10px;
+        transform: scale(0.8, 0.8);
+    }
+
+    #manage .fitapp-plan {
+        transform: scale(0.8, 0.8);
+    }
+
+    #manage .fitapp-plan:nth-of-type(2) {
+        margin: 0;
+    }
+
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991px) {
+
+    .navbar-fitapp {
+        position: relative;
+        background: #2ecc71;
+    }
+
+    .navbar-fitapp.navbar-expand-lg > .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #about {
+        padding-top: 45px;
+    }
+
+    #features .nav-fitapp-circles {
+        top: calc(25% - 100px);
+        right: -35px;
+        transform: scale(0.6, 0.6);
+    }
+
+    #about .img-iphone {
+        float: left;
+        margin-bottom: 0;
+        margin-right: -15px;
+    }
+
+    #manage .fitapp-plan:nth-of-type(2) {
+        width: 450px;
+        left: -15px;
+    }
+
+    #about, #simple, #download {
+        background-image: none;
+    }
+
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) {
+
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(fonts/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(fonts/roboto/Roboto-Bold.ttf);
+}
