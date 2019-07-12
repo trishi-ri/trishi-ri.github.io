@@ -35,6 +35,12 @@ body {
     color: #5a5a5a;
 }
 
+.navbar-fitapp {
+    position: absolute;
+    background: transparent;
+    width: 100%;
+}
+
 .navbar-fitapp .navbar-brand {
     font-family: "Segoe UI Black", sans-serif;
     font-size: 39px;
@@ -70,6 +76,16 @@ body {
     border-radius: 20px;
     font-family: Roboto-Bold, sans-serif;
     font-weight: bold;
+}
+
+#about {
+    padding-top: 145px;
+    background: url("images/about/bg-apple-part.png") left 10% no-repeat fixed,
+    url("images/about/bg-banana.png") 45% 10% no-repeat fixed,
+    url("images/about/bg-strawberry.png") 50% 70% no-repeat fixed,
+    url("images/about/bg-apple.png") 80% 55% no-repeat fixed,
+    url("images/about/bg-tomato.png") 95% 20% no-repeat fixed,
+    #2ecc71;
 }
 
 #about .fitapp-icon {
@@ -155,9 +171,13 @@ img.brightness-3 {
 }
 
 #simple {
-    background-color: #f9f9f9;
     text-align: center;
     padding-top: 100px;
+    background: url("images/simple/bg-pepper.png") 10% 45% no-repeat fixed,
+    url("images/simple/bg-apple.png") 24% 90% no-repeat fixed,
+    url("images/simple/bg-banana.png") 77% 95% no-repeat fixed,
+    url("images/simple/bg-strawberry.png") 85% 50% no-repeat fixed,
+    #f9f9f9;
 }
 
 #simple p {
@@ -250,6 +270,12 @@ img.brightness-3 {
     padding: 100px 0;
     text-align: center;
     font-family: Roboto-Light, sans-serif;
+    background: url("images/download/bg-tomato.png") left 90% no-repeat fixed,
+    url("images/download/bg-pepper.png") 17% 80% no-repeat fixed,
+    url("images/download/bg-strawberry.png") 25% bottom no-repeat fixed,
+    url("images/download/bg-banana.png") 85% 75% no-repeat fixed,
+    url("images/download/bg-apple.png") right bottom no-repeat fixed,
+    #2ecc71;
 }
 
 #download h2 .text-accent {
@@ -278,9 +304,18 @@ img.brightness-3 {
 /*Medium devices (tablets, less than 992px)*/
 @media (max-width: 991px) {
 
+    .navbar-fitapp {
+        position: relative;
+        background: #2ecc71;
+    }
+
     .navbar-fitapp.navbar-expand-lg > .container {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    #about {
+        padding-top: 45px;
     }
 
     #features .nav-fitapp-circles {
@@ -299,6 +334,11 @@ img.brightness-3 {
         width: 450px;
         left: -15px;
     }
+
+    #about, #simple, #download {
+        background-image: none;
+    }
+
 }
 
 /*Small devices (landscape phones, less than 768px)*/
