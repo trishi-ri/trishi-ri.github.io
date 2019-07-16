@@ -1,11 +1,13 @@
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     min-width: 720px;
     font-size: 18px;
 }
 
 h2 {
     font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 .container {
@@ -24,7 +26,8 @@ h2 {
 .bg-fitapp-white {
     background-color: #fff;
     color: #000;
-    font-family: Roboto-Light, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 .bg-fitapp-white .text-accent {
@@ -74,12 +77,13 @@ h2 {
 
 .btn-fitapp {
     border-radius: 20px;
-    font-family: Roboto-Bold, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
 #about {
-    font-family: Roboto-Light, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
     padding-top: 145px;
     background: url("images/about/bg-apple-part.png") left 10% no-repeat fixed,
     url("images/about/bg-banana.png") 45% 10% no-repeat fixed,
@@ -100,7 +104,7 @@ h2 {
 }
 
 #about h2 .text-accent {
-    font-family: Roboto-Bold, sans-serif;
+    font-weight: bold;
 }
 
 #about .wrapper {
@@ -226,7 +230,8 @@ img.brightness-3 {
 }
 
 #manage .fitapp-plan .text-accent, #manage .fitapp-plan_time {
-    font-family: Roboto-Bold, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 #manage .fitapp-plan_info {
@@ -270,7 +275,8 @@ img.brightness-3 {
 #download {
     padding: 100px 0;
     text-align: center;
-    font-family: Roboto-Light, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
     background: url("images/download/bg-tomato.png") left 90% no-repeat fixed,
     url("images/download/bg-pepper.png") 17% 80% no-repeat fixed,
     url("images/download/bg-strawberry.png") 25% bottom no-repeat fixed,
@@ -280,7 +286,7 @@ img.brightness-3 {
 }
 
 #download h2 .text-accent {
-    font-family: Roboto-Bold, sans-serif;
+    font-weight: bold;
 }
 
 /*Large devices (desktops, less than 1200px)*/
@@ -350,19 +356,4 @@ img.brightness-3 {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
 
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(fonts/roboto/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Roboto-Light';
-    src: url(fonts/roboto/Roboto-Light.ttf);
-}
-
-@font-face {
-    font-family: 'Roboto-Bold';
-    src: url(fonts/roboto/Roboto-Bold.ttf);
 }
