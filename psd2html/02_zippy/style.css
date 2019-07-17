@@ -1,0 +1,84 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 710px;
+}
+
+.navbar-zippy {
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+}
+
+.navbar-zippy .navbar-brand {
+    font-size: 29px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.navbar-zippy .nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.navbar-zippy .nav-link.active,
+.navbar-zippy .nav-link:hover {
+    color: #ffe26d;
+}
+
+.btn-zippy {
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: #323232;
+    background-color: #ffe26d;
+    border: none;
+    padding: 15px 28px;
+    margin: 5px 0;
+}
+
+.btn-zippy:hover {
+    color: #ffffff;
+    background-color: #62497c;
+}
+
+#home {
+    background: url(images/header/background.jpg) no-repeat top center;
+    color: #ffffff;
+    padding-top: 190px;
+    height: 690px;
+}
+
+#home h2 {
+    font-size: 41px;
+    font-weight: bold;
+}
+
+#home p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 19px;
+    margin: 40px 0;
+}
+
+#home .carousel-indicators {
+    margin-bottom: 40px;
+    margin-left: 0;
+    justify-content: normal;
+}
+
+#home .carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px transparent solid;
+}
+
