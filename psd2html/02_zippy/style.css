@@ -50,6 +50,10 @@ p {
     margin: 5px 0;
 }
 
+.btn-zippy.btn-zippy--white{
+    background-color: #fefefe;
+}
+
 .btn-zippy:hover {
     color: #ffffff;
     background-color: #62497c;
@@ -128,6 +132,49 @@ p {
     font-size: 13px;
     line-height: 24px;
     color: #040405;
+    font-weight: normal;
+    opacity: .5;
+}
+
+#projects h2 {
+    padding: 60px 0;
+    text-align: center;
+    font-size: 44px;
+    line-height: 41px;
+    color: #040405;
+}
+
+#projects .container {
+    max-width: 1400px;
+    padding: 0;
+}
+
+#projects .project {
+    background-color: #efefef;
+}
+#projects .project:hover {
+    background-color: #ffe26d;
+}
+
+#projects .project-image {
+    width: 351px;
+    height: 484px;
+}
+
+#projects .project-content {
+    padding: 42px;
+    color: #040405;
+}
+
+#projects .project-content h5 {
+    font-size: 15px;
+    line-height: 41px;
+    text-transform: uppercase;
+}
+
+#projects .project-content p {
+    font-size: 13px;
+    line-height: 24px;
     font-weight: normal;
     opacity: .5;
 }
