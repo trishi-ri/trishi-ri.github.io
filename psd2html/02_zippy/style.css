@@ -9,6 +9,10 @@ p {
     font-weight: 100;
 }
 
+h2, h5 {
+    font-weight: bold;
+}
+
 .container {
     max-width: 710px;
 }
@@ -41,6 +45,7 @@ p {
 .btn-zippy {
     font-weight: bold;
     font-size: 10px;
+    line-height: 7px;
     text-transform: uppercase;
     border-radius: 3px;
     color: #323232;
@@ -50,7 +55,7 @@ p {
     margin: 5px 0;
 }
 
-.btn-zippy.btn-zippy--white{
+.btn-zippy.btn-zippy--white {
     background-color: #fefefe;
 }
 
@@ -106,7 +111,7 @@ p {
 
 #welcome .features {
     padding: 60px 0;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
 }
 
 #welcome .feature {
@@ -152,6 +157,7 @@ p {
 #projects .project {
     background-color: #efefef;
 }
+
 #projects .project:hover {
     background-color: #ffe26d;
 }
@@ -177,4 +183,48 @@ p {
     line-height: 24px;
     font-weight: normal;
     opacity: .5;
+}
+
+#pricing {
+    padding-top: 42px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 7px;
+    color: #040405;
+}
+
+#pricing .price-with-separators {
+    border-left: 2px solid #e6e6e6;
+    border-right: 2px solid #e6e6e6;
+}
+
+#pricing h2 {
+    padding: 60px 0;
+    font-size: 44px;
+    line-height: 41px;
+    color: #040405;
+}
+
+#pricing h5 {
+    margin-bottom: 20px;
+}
+
+#pricing p {
+    font-weight: normal;
+    opacity: .39;
+}
+
+#pricing ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 10px;
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#pricing .btn-zippy {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
