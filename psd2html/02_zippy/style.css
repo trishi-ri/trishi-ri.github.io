@@ -156,6 +156,7 @@ h2, h5 {
 
 #projects .project {
     background-color: #efefef;
+    overflow: hidden;
 }
 
 #projects .project:hover {
@@ -227,4 +228,85 @@ h2, h5 {
 #pricing .btn-zippy {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#video-projects {
+    padding: 90px 0;
+    color: #fefefe;
+}
+
+#video-projects .container {
+    max-width: 1400px;
+    padding: 50px 0;
+    background-color: #62497c;
+}
+
+#video-projects h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#video-projects .gallery {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    /* todo: позже ещё подумать как быть с анимацией, а пока пусть так */
+}
+
+#video-projects .gallery-item {
+    margin: 0 19px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+#video-projects .gallery-item:first-of-type.active,
+#video-projects .gallery-item:first-of-type:hover {
+    margin-left: 117%;
+}
+
+#video-projects .gallery-item:last-of-type.active,
+#video-projects .gallery-item:last-of-type:hover {
+    padding-right: 114%;
+}
+
+#video-projects .video-text {
+    margin-top: 24px;
+}
+
+#video-projects .gallery-item,
+#video-projects .video-title {
+    font-size: 10px;
+    line-height: 7px;
+}
+
+#video-projects .video-image {
+    position: relative;
+}
+
+#video-projects .video-play {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .20);
+}
+
+#video-projects .video-play .btn-play {
+    width: 120px;
+    height: 120px;
+    padding: 0;
+    border: none;
+    border-radius: 60px;
+    background: url("images/video-projects/play.png") center no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#video-projects .video-image:hover .video-play {
+    background: rgba(0, 0, 0, .60);
 }
