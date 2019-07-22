@@ -1,15 +1,16 @@
 
 body {
+    color: #040405;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 132px;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
 }
 
 h2, h5 {
+    text-align: center;
     font-weight: bold;
 }
 
@@ -72,12 +73,14 @@ h2, h5 {
 }
 
 #home h2 {
+    text-align: left;
     font-size: 41px;
 }
 
 #home p {
     font-size: 19px;
     margin: 40px 0;
+    font-weight: 100;
 }
 
 #home .carousel-indicators {
@@ -96,17 +99,16 @@ h2, h5 {
 
 #welcome {
     padding-top: 87px;
-    color: #040405;
 }
 
 #welcome h2 {
-    text-align: center;
     font-size: 44px;
     margin-bottom: 58px;
 }
 
-#welcome p {
+#welcome .welcome-text {
     font-size: 29px;
+    font-weight: 100;
 }
 
 #welcome .features {
@@ -136,17 +138,13 @@ h2, h5 {
 #welcome .feature p {
     font-size: 13px;
     line-height: 24px;
-    color: #040405;
-    font-weight: normal;
     opacity: .5;
 }
 
 #projects h2 {
     padding: 60px 0;
-    text-align: center;
     font-size: 44px;
     line-height: 41px;
-    color: #040405;
 }
 
 #projects .container {
@@ -170,10 +168,10 @@ h2, h5 {
 
 #projects .project-content {
     padding: 42px;
-    color: #040405;
 }
 
 #projects .project-content h5 {
+    text-align: left;
     font-size: 15px;
     line-height: 41px;
     text-transform: uppercase;
@@ -182,7 +180,6 @@ h2, h5 {
 #projects .project-content p {
     font-size: 13px;
     line-height: 24px;
-    font-weight: normal;
     opacity: .5;
 }
 
@@ -191,7 +188,6 @@ h2, h5 {
     text-align: center;
     font-size: 15px;
     line-height: 7px;
-    color: #040405;
 }
 
 #pricing .price-with-separators {
@@ -203,7 +199,6 @@ h2, h5 {
     padding: 60px 0;
     font-size: 44px;
     line-height: 41px;
-    color: #040405;
 }
 
 #pricing h5 {
@@ -211,8 +206,7 @@ h2, h5 {
 }
 
 #pricing p {
-    font-weight: normal;
-    opacity: .39;
+    opacity: .5;
 }
 
 #pricing ul {
@@ -242,7 +236,6 @@ h2, h5 {
 }
 
 #video-projects h2 {
-    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -309,4 +302,56 @@ h2, h5 {
 
 #video-projects .video-image:hover .video-play {
     background: rgba(0, 0, 0, .60);
+}
+
+#team {
+    text-align: center;
+}
+
+#team h2 {
+    margin-bottom: 40px;
+    font-size: 44px;
+    line-height: 41px;
+}
+
+#team .team-photo {
+    position: relative;
+}
+
+#team .team-photo,
+#team .team-photo > img,
+#team .team-links {
+    width: 172px;
+    height: 172px;
+    margin: 0 auto;
+    border-radius: 86px;
+}
+
+#team .team-links {
+    display: none;
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    background-color: rgba(98, 73, 124, .7);
+}
+
+#team .team-photo:hover .team-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#team h5 {
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 7px;
+}
+
+#team p {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 15px;
+    line-height: 7px;
+    opacity: .5;
 }
