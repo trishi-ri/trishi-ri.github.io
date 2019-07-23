@@ -66,7 +66,7 @@ h2, h5 {
 }
 
 #home {
-    background: url(images/header/background.jpg) no-repeat top center;
+    background: url('images/header/background.jpg') no-repeat top center;
     color: #ffffff;
     padding-top: 190px;
     height: 690px;
@@ -254,6 +254,7 @@ h2, h5 {
 
 #video-projects .gallery-item:first-of-type.active,
 #video-projects .gallery-item:first-of-type:hover {
+    /*fixme: при другом размере окна получается не по центру*/
     margin-left: 117%;
 }
 
@@ -291,7 +292,7 @@ h2, h5 {
     padding: 0;
     border: none;
     border-radius: 60px;
-    background: url("images/video-projects/play.png") center no-repeat;
+    background: url('images/video-projects/play.png') center no-repeat;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -354,4 +355,50 @@ h2, h5 {
     font-size: 15px;
     line-height: 7px;
     opacity: .5;
+}
+
+#life .container {
+    max-width: 1400px;
+    padding: 50px 0;
+    background-color: #efefef;
+}
+
+#life h2 {
+    margin-bottom: 35px;
+    font-size: 44px;
+    line-height: 41px;
+}
+
+#life .carousel {
+    width: 694px;
+    margin: 0 auto;
+}
+
+#life .carousel-indicators {
+    position: relative;
+    margin: 0;
+}
+
+#life .carousel-indicators li {
+    width: 111px;
+    height: 69px;
+    text-indent: unset;
+    margin: 0 6px;
+}
+
+#life a[class^='carousel-control-'] {
+    position: relative;
+    margin: 10px 0;
+    width: 29px;
+    height: 68px;
+    background-color: #2a2a2a;
+    opacity: 1;
+}
+
+#life a[class^='carousel-control-']:hover {
+    background-color: #62497c;
+}
+
+#life span[class^='carousel-control-'] {
+    width: 13px;
 }
