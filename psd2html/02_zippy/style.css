@@ -9,9 +9,17 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+p.text-opacity {
+    opacity: .5;
+}
+
 h2, h5 {
     text-align: center;
     font-weight: bold;
+}
+
+h5 {
+    text-transform: uppercase;
 }
 
 .container {
@@ -64,6 +72,15 @@ h2, h5 {
     color: #ffffff;
     background-color: #62497c;
 }
+
+.btn-zippy.btn-zippy--hover-yellow {
+    background-color: #ececec;
+}
+.btn-zippy.btn-zippy--hover-yellow:hover {
+    color: #323232;
+    background-color: #ffe26d;
+}
+
 
 #home {
     background: url('images/header/background.jpg') no-repeat top center;
@@ -132,13 +149,11 @@ h2, h5 {
     font-size: 15px;
     line-height: 41px;
     color: #62497c;
-    text-transform: uppercase;
 }
 
 #welcome .feature p {
     font-size: 13px;
     line-height: 24px;
-    opacity: .5;
 }
 
 #projects h2 {
@@ -174,13 +189,11 @@ h2, h5 {
     text-align: left;
     font-size: 15px;
     line-height: 41px;
-    text-transform: uppercase;
 }
 
 #projects .project-content p {
     font-size: 13px;
     line-height: 24px;
-    opacity: .5;
 }
 
 #pricing {
@@ -203,10 +216,7 @@ h2, h5 {
 
 #pricing h5 {
     margin-bottom: 20px;
-}
-
-#pricing p {
-    opacity: .5;
+    text-transform: none;
 }
 
 #pricing ul {
@@ -343,7 +353,6 @@ h2, h5 {
 }
 
 #team h5 {
-    text-transform: uppercase;
     margin-top: 30px;
     font-size: 15px;
     line-height: 7px;
@@ -354,7 +363,6 @@ h2, h5 {
     margin-bottom: 60px;
     font-size: 15px;
     line-height: 7px;
-    opacity: .5;
 }
 
 #life .container {
@@ -432,4 +440,22 @@ h2, h5 {
 #newsletter .btn-zippy {
     height: 54px;
     margin: 0;
+}
+
+#blog {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#blog h2 {
+    margin-bottom: 50px;
+}
+
+#blog h5 {
+    margin-top: 30px;
+    font-size: 15px;
+}
+#blog p {
+    font-size: 13px;
+    line-height: 24px;
 }
