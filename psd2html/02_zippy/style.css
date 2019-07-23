@@ -402,3 +402,34 @@ h2, h5 {
 #life span[class^='carousel-control-'] {
     width: 13px;
 }
+
+#newsletter {
+    height: 328px;
+    padding: 50px 0;
+    background: url('images/newsletter/background.jpg') center no-repeat;
+}
+
+#newsletter h2 {
+    font-size: 44px;
+    line-height: 41px;
+    color: #ffffff;
+}
+
+#newsletter input {
+    width: 545px;
+    height: 54px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #fefefe;
+    font-size: 19px;
+    line-height: 41px;
+}
+
+#newsletter input::placeholder {
+    color: #d8d8d8;
+}
+
+#newsletter .btn-zippy {
+    height: 54px;
+    margin: 0;
+}
