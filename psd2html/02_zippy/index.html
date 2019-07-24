@@ -96,7 +96,8 @@
                         <img src="images/welcome/bell.png" alt="bell icon">
                     </div>
                     <h5>LOREM IPSUM</h5>
-                    <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis placerat
+                    <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel
+                        odio vel felis placerat
                         pharetra ut vitae felis. </p>
                     <button class="btn btn-zippy">learn more</button>
                 </div>
@@ -105,7 +106,8 @@
                         <img src="images/welcome/envelop.png" alt="envelop icon">
                     </div>
                     <h5>dolor sit</h5>
-                    <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis placerat
+                    <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel
+                        odio vel felis placerat
                         pharetra ut vitae felis. </p>
                     <button class="btn btn-zippy">learn more</button>
                 </div>
@@ -114,7 +116,8 @@
                         <img src="images/welcome/drawer.png" alt="drawer icon">
                     </div>
                     <h5>consecteture</h5>
-                    <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis placerat
+                    <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel
+                        odio vel felis placerat
                         pharetra ut vitae felis. </p>
                     <button class="btn btn-zippy">learn more</button>
                 </div>
@@ -129,7 +132,8 @@
                     <img class="project-image" src="images/projects/variations.jpg">
                     <div class="project-content">
                         <h5>project name</h5>
-                        <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                            vel odio vel felis
                             placerat pharetra ut vitae felis. </p>
                         <button class="btn btn-zippy btn-zippy--white">launch case study</button>
                     </div>
@@ -138,7 +142,8 @@
                     <img class="project-image" src="images/projects/tasks.jpg">
                     <div class="project-content">
                         <h5>project name</h5>
-                        <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                            vel odio vel felis
                             placerat pharetra ut vitae felis. </p>
                         <button class="btn btn-zippy btn-zippy--white">launch case study</button>
                     </div>
@@ -147,7 +152,8 @@
                     <img class="project-image" src="images/projects/doe.jpg">
                     <div class="project-content">
                         <h5>project name</h5>
-                        <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                            vel odio vel felis
                             placerat pharetra ut vitae felis. </p>
                         <button class="btn btn-zippy btn-zippy--white">launch case study</button>
                     </div>
@@ -156,7 +162,8 @@
                     <img class="project-image" src="images/projects/agency.jpg">
                     <div class="project-content">
                         <h5>project name</h5>
-                        <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        <p class="text-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                            vel odio vel felis
                             placerat pharetra ut vitae felis. </p>
                         <button class="btn btn-zippy btn-zippy--white">launch case study</button>
                     </div>
@@ -335,7 +342,7 @@
     <div id="life">
         <div class="container">
             <h2>Life in Zippy</h2>
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="col">
                     <div id="lifeCarousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
@@ -438,9 +445,61 @@
     </div>
     <div id="contact">
         <div class="container">
-            <div class="row">
-                <div class="col">
-
+            <div class="row no-gutters">
+                <div class="col-6">
+                    <div class="contact-map"></div>
+                </div>
+                <div class="col-6 p-5 contact-form">
+                    <h2>Contact</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" class="form-control" id="contactName">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail1">Email address</label>
+                            <input type="email" class="form-control" id="contactEmail1" required
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" class="form-control" id="contactSubject">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea class="form-control" id="contactMessage" required
+                                      rows="5" maxlength="2000"></textarea>
+                        </div>
+                        <button class="btn btn-block btn-zippy btn-zippy--white">send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 no-gutters justify-content-center">
+                <div class="col-3">
+                    <h5>Office Address</h5>
+                    <p>Lorem Ipsum dolor, 234<br>
+                        1200 Consecture<br>
+                        Adipsching</p>
+                </div>
+                <div class="col-3">
+                    <h5>Follow us</h5>
+                    <div class="contact-social">
+                        <a class="contact-social-link" href="#"><img src="images/contact/behance.png" alt="behance"></a>
+                        <a class="contact-social-link" href="#"><img src="images/contact/twitter.png" alt="twitter"></a>
+                        <a class="contact-social-link" href="#"><img src="images/contact/linkediin.png" alt="linkediin"></a>
+                    </div>
+                    <div class="contact-social">
+                        <a class="contact-social-link" href="#"><img src="images/contact/facebook.png"
+                                                                     alt="facebook"></a>
+                        <a class="contact-social-link" href="#"><img src="images/contact/google.png" alt="google"></a>
+                        <a class="contact-social-link" href="#"><img src="images/contact/tumblr.png" alt="tumblr"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h5>Contact us</h5>
+                    <p> + 123 456 789<br>
+                        zippy@skype<br>
+                        enquiry@zippy.com </p>
                 </div>
             </div>
         </div>
