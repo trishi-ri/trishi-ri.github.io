@@ -1,5 +1,6 @@
 
 body {
+    min-width: 483px;
     color: #040405;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 100px;
@@ -7,18 +8,24 @@ body {
 
 p {
     font-family: 'Roboto', sans-serif;
+    font-size: 13px;
 }
 
 p.text-opacity {
     opacity: .5;
 }
 
-h2, h5 {
+.title-zippy, .subtitle-zippy {
     text-align: center;
     font-weight: bold;
 }
 
-h5 {
+.title-zippy {
+    font-size: 44px;
+}
+
+.subtitle-zippy {
+    font-size: 15px;
     text-transform: uppercase;
 }
 
@@ -37,6 +44,7 @@ h5 {
     font-weight: bold;
     text-transform: uppercase;
     color: #ffffff;
+    margin-left: 16px;
 }
 
 .navbar-zippy .nav-link {
@@ -54,7 +62,6 @@ h5 {
 .btn-zippy {
     font-weight: bold;
     font-size: 10px;
-    line-height: 7px;
     text-transform: uppercase;
     border-radius: 3px;
     color: #323232;
@@ -76,11 +83,11 @@ h5 {
 .btn-zippy.btn-zippy--hover-yellow {
     background-color: #ececec;
 }
+
 .btn-zippy.btn-zippy--hover-yellow:hover {
     color: #323232;
     background-color: #ffe26d;
 }
-
 
 #home {
     background: url('images/header/background.jpg') no-repeat top center;
@@ -89,7 +96,7 @@ h5 {
     height: 690px;
 }
 
-#home h2 {
+#home .title-zippy {
     text-align: left;
     font-size: 41px;
 }
@@ -118,8 +125,7 @@ h5 {
     padding-top: 87px;
 }
 
-#welcome h2 {
-    font-size: 44px;
+#welcome .title-zippy {
     margin-bottom: 58px;
 }
 
@@ -129,37 +135,29 @@ h5 {
 }
 
 #welcome .features {
-    padding: 60px 0;
+    padding: 30px 0;
     border-bottom: 2px solid #e6e6e6;
 }
 
 #welcome .feature {
     text-align: center;
+    padding-bottom: 15px;
 }
 
 #welcome .feature-icon {
-    margin: 0 auto 15px;
+    margin: 15px auto;
     width: 80px;
     height: 80px;
     border-radius: 40px;
     background-color: #62497c;
 }
 
-#welcome .feature h5 {
-    font-size: 15px;
-    line-height: 41px;
+#welcome .feature .subtitle-zippy {
     color: #62497c;
 }
 
-#welcome .feature p {
-    font-size: 13px;
-    line-height: 24px;
-}
-
-#projects h2 {
+#projects .title-zippy {
     padding: 60px 0;
-    font-size: 44px;
-    line-height: 41px;
 }
 
 #projects .container {
@@ -172,35 +170,30 @@ h5 {
     overflow: hidden;
 }
 
+#projects .project:nth-of-type(2n) {
+    background-color: #e4e4e4;
+}
+
 #projects .project:hover {
     background-color: #ffe26d;
 }
 
 #projects .project-image {
-    width: 351px;
-    height: 484px;
+    width: 100%;
 }
 
 #projects .project-content {
     padding: 42px;
 }
 
-#projects .project-content h5 {
+#projects .project-content .subtitle-zippy {
     text-align: left;
-    font-size: 15px;
-    line-height: 41px;
-}
-
-#projects .project-content p {
-    font-size: 13px;
-    line-height: 24px;
 }
 
 #pricing {
     padding-top: 42px;
     text-align: center;
     font-size: 15px;
-    line-height: 7px;
 }
 
 #pricing .price-with-separators {
@@ -208,13 +201,11 @@ h5 {
     border-right: 2px solid #e6e6e6;
 }
 
-#pricing h2 {
+#pricing .title-zippy {
     padding: 60px 0;
-    font-size: 44px;
-    line-height: 41px;
 }
 
-#pricing h5 {
+#pricing .subtitle-zippy {
     margin-bottom: 20px;
     text-transform: none;
 }
@@ -224,7 +215,6 @@ h5 {
     padding: 0;
     margin-bottom: 10px;
     font-size: 10px;
-    line-height: 22px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
@@ -245,7 +235,7 @@ h5 {
     background-color: #62497c;
 }
 
-#video-projects h2 {
+#video-projects .title-zippy {
     margin-bottom: 50px;
 }
 
@@ -265,7 +255,7 @@ h5 {
 #video-projects .gallery-item:first-of-type.active,
 #video-projects .gallery-item:first-of-type:hover {
     /*fixme: при другом размере окна получается не по центру*/
-    margin-left: 117%;
+    padding-left: 117%;
 }
 
 #video-projects .gallery-item:last-of-type.active,
@@ -278,9 +268,8 @@ h5 {
 }
 
 #video-projects .gallery-item,
-#video-projects .video-title {
+#video-projects .subtitle-zippy {
     font-size: 10px;
-    line-height: 7px;
 }
 
 #video-projects .video-image {
@@ -288,6 +277,7 @@ h5 {
 }
 
 #video-projects .video-play {
+    /*fixme: при смене масштаба расползаются размеры затемнения*/
     position: absolute;
     top: 0;
     z-index: 1;
@@ -303,6 +293,7 @@ h5 {
     border: none;
     border-radius: 60px;
     background: url('images/video-projects/play.png') center no-repeat;
+    background-size: contain;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -319,10 +310,8 @@ h5 {
     text-align: center;
 }
 
-#team h2 {
+#team .title-zippy {
     margin-bottom: 40px;
-    font-size: 44px;
-    line-height: 41px;
 }
 
 #team .team-photo {
@@ -352,17 +341,13 @@ h5 {
     align-items: center;
 }
 
-#team h5 {
+#team .subtitle-zippy {
     margin-top: 30px;
-    font-size: 15px;
-    line-height: 7px;
 }
 
 #team p {
-    margin-top: 20px;
     margin-bottom: 60px;
     font-size: 15px;
-    line-height: 7px;
 }
 
 #life .container {
@@ -371,14 +356,12 @@ h5 {
     background-color: #efefef;
 }
 
-#life h2 {
+#life .title-zippy {
     margin-bottom: 35px;
-    font-size: 44px;
-    line-height: 41px;
 }
 
 #life .carousel {
-    width: 694px;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -388,17 +371,18 @@ h5 {
 }
 
 #life .carousel-indicators li {
-    width: 111px;
-    height: 69px;
+    width: auto;
+    height: auto;
     text-indent: unset;
     margin: 0 6px;
+    border: none;
 }
 
 #life a[class^='carousel-control-'] {
     position: relative;
-    margin: 10px 0;
+    /*margin: 10px 0;*/
     width: 29px;
-    height: 68px;
+    /*height: 68px;*/
     background-color: #2a2a2a;
     opacity: 1;
 }
@@ -417,20 +401,16 @@ h5 {
     background: url('images/newsletter/background.jpg') center no-repeat;
 }
 
-#newsletter h2 {
-    font-size: 44px;
-    line-height: 41px;
+#newsletter .title-zippy {
     color: #ffffff;
 }
 
 #newsletter input {
-    width: 545px;
     height: 54px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     background-color: #fefefe;
     font-size: 19px;
-    line-height: 41px;
     border: none;
 }
 
@@ -448,17 +428,12 @@ h5 {
     text-align: center;
 }
 
-#blog h2 {
-    margin-bottom: 50px;
+#blog .title-zippy {
+    margin-bottom: 40px;
 }
 
-#blog h5 {
+#blog .subtitle-zippy {
     margin-top: 30px;
-    font-size: 15px;
-}
-#blog p {
-    font-size: 13px;
-    line-height: 24px;
 }
 
 #contact {
@@ -472,8 +447,8 @@ h5 {
 
 #contact .contact-map {
     background: url('images/contact/map.jpg') no-repeat;
-    width: 100%;
     height: 100%;
+    background-size: cover;
 }
 
 #contact .contact-form {
@@ -481,9 +456,7 @@ h5 {
     text-align: left;
 }
 
-#contact h2 {
-    font-size: 44px;
-    line-height: 41px;
+#contact .title-zippy {
     text-align: left;
     margin-bottom: 35px;
 }
@@ -491,7 +464,6 @@ h5 {
 #contact form {
     width: 309px;
     font-size: 10px;
-    line-height: 7px;
     color: #323232;
     font-weight: bold;
     text-transform: uppercase;
@@ -509,7 +481,7 @@ h5 {
 #contact textarea {
     border: none;
     border-radius: unset;
-    box-shadow: 1px 1px 1px rgba(22,22,23,0.09);
+    box-shadow: 1px 1px 1px rgba(22, 22, 23, 0.09);
     background-color: #fefefe;
 }
 
@@ -517,13 +489,8 @@ h5 {
     resize: none;
 }
 
-#contact h5 {
+#contact .subtitle-zippy {
     font-size: 10px;
-}
-
-#contact p {
-    font-size: 13px;
-    line-height: 24px;
 }
 
 #contact .contact-social {
@@ -547,4 +514,31 @@ h5 {
 
 #contact .contact-social-link [alt="twitter"] {
     padding: 7px 7px 0 0;
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199px) {
+
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991px) {
+
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) {
+    #video-projects .video-image img {
+        width: 300px;
+    }
+
+    #video-projects .video-play .btn-play {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+
 }
