@@ -299,7 +299,8 @@ img.brightness-3 {
     }
 
     #manage .fitapp-plan {
-        transform: scale(0.8, 0.8);
+        transform: scale(0.77, 0.77);
+        left: -45px;
     }
 
     #manage .fitapp-plan:nth-of-type(2) {
@@ -337,9 +338,21 @@ img.brightness-3 {
         margin-right: -15px;
     }
 
+    #simple img {
+        transform: scale(0.8, 0.8);
+    }
+
+    #simple img:first-of-type {
+        right: 57%;
+    }
+
+    #simple img:last-of-type {
+        left: 57%;
+    }
+
     #manage .fitapp-plan:nth-of-type(2) {
         width: 450px;
-        left: -15px;
+        left: -60px;
     }
 
     #about, #simple, #download {
