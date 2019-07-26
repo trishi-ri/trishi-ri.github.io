@@ -240,27 +240,35 @@ p.text-opacity {
 }
 
 #video-projects .gallery {
+    position: relative;
+    overflow: hidden;
+    /*height: 510px;*/
+}
+
+#video-projects .gallery-list {
+    /*position: absolute;*/
+    /*white-space: nowrap;*/
     display: flex;
     justify-content: center;
-    overflow: hidden;
     /* todo: позже ещё подумать как быть с анимацией, а пока пусть так */
 }
 
 #video-projects .gallery-item {
     margin: 0 19px;
     font-weight: 700;
+    display: inline-block;
     transition: 1s;
 }
 
 #video-projects .gallery-item:first-of-type.active,
 #video-projects .gallery-item:first-of-type:hover {
     /*fixme: при другом размере окна получается не по центру*/
-    padding-left: 117%;
+    padding-left: 110%;
 }
 
 #video-projects .gallery-item:last-of-type.active,
 #video-projects .gallery-item:last-of-type:hover {
-    padding-right: 114%;
+    padding-right: 110%;
 }
 
 #video-projects .video-text {
@@ -274,10 +282,10 @@ p.text-opacity {
 
 #video-projects .video-image {
     position: relative;
+    display: inline-block;
 }
 
 #video-projects .video-play {
-    /*fixme: при смене масштаба расползаются размеры затемнения*/
     position: absolute;
     top: 0;
     z-index: 1;
